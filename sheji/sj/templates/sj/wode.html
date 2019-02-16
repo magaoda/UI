@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   {% load static %}
+    <link rel="stylesheet" href="{% static 'sj/css/wode.css' %}">
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+    <title>我的</title>
+</head>
+<body>
+  <div class="top">
+    <div class="left"><a href=""></a></div>
+    <div class="center"><span>任洁</span></div>
+    <div class="video"><a href=""></a></div>
+    <div class="phone"><a href=""></a></div>
+  </div>
+  <div class="content">
+    <div class="date"><span>2018.10.23</span></div>
+    <div class="one">
+      <a href=""></a>
+      <div class="zi"><span>你好，我可以领养你们家狗狗吗？</span></div>
+    </div>
+    <div class="two">
+      <a href=""></a>
+      <div class="zi"><span>当然，不过最近它一直在拉肚子</span></div>
+    </div>
+    <div class="three">
+      <a href=""></a>
+      <div class="zi"></div>
+    </div>
+    <div class="four">
+      <a href=""></a>
+      <div class="zi"><span>好的，真是谢谢你了~</span></div>
+    </div>
+    <div class="five">
+      <a href=""></a>
+      <div class="zi"><span></span></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="yuyin"><a href=""></a></div>
+
+    <div class="emoji"><a href=""></a></div>
+    <div class="jia"><a href=""></a></div>
+    <div class="input" id="input" >
+        <a href="" id="yuyin"></a>
+      <input type="text" id="input1" placeholder="请输入......" onblur="show()">
+    </div>
+  </div>
+</body>
+</html>
+<script>
+  // function show(){
+  //   var v=document.getElementById("input1").value
+  //   alert(v)
+  // }
+  function show(){
+    var str=''
+    var v=$("#input1").val()
+    str+=`<div class="four">
+      <a href=""></a>
+      <div class="zi"><span>${v}</span></div>
+    </div>`
+    var content=document.querySelector('.content')
+    content.innerHTML+=str
+  }
+  $("input").focus(function(){
+    $(".input").css({
+      width:"5.4rem",
+    })
+    $("input").css({
+      width:"4.8rem",
+    })
+    $(".yuyin").css({
+      display:"none",
+      left:"0.4rem",
+    })
+    $("#yuyin").css({
+      display:"block",
+    })
+  })
+  $("input").blur(function(){
+    $(".input").css({
+      width:"4.7rem",
+    })
+    $("input").css({
+      width:"4.4rem",
+    })
+    $(".yuyin").css({
+      display:"block",
+    })
+    $("#yuyin").css({
+      display:"none",
+    })
+  })
+
+</script>

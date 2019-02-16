@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+}
+body{
+	background-color: #fff;
+	font-size: 0.2rem;
+}
+
+
+
+.app {
+	width: 100%;
+	height: auto;
+}
+.app header{
+	width:100%;
+	height:0.8rem;
+	background:-webkit-linear-gradient(left,#FE4735,#FE3644,#FE2552);
+}
+.app header .con{
+	width:7.03rem;
+	height:100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.app header .con .icon_sousuo{
+	color:#FFFCFC;
+}
+.app header .con .icon_sousuo img{
+	display: inline;
+}
+.app header .con .word{
+	font-size: 0.3rem;
+	color:#fff;
+	font-weight: bold;
+}
+.app header .con .icon_fabu{
+	color:#FFFCFC;
+}
+.app main .search{
+	position: relative;
+	width:100%;
+	height:1.26rem;
+	background:-webkit-linear-gradient(left,#FE4735,#FE3644,#FE2552);
+	z-index: 2;
+}
+.app main .search input{
+	width: 6.80rem;
+	height:0.56rem;
+	border: 0;
+	background-color: #fff;
+	border-radius: 0.32rem;
+	margin-left: 0.28rem;
+	margin-top: 0.23rem;
+}
+.app main .background{
+	position: relative;
+	width: 100%;
+	height:2rem;
+	background:-webkit-linear-gradient(left,#FE4735,#FE3644,#FE2552);
+	border-radius: 1rem;
+	margin-top: -1rem;
+	z-index: 1;
+}
+.app main .con{
+	position: relative;
+	width:100%;
+	height: 10.34rem;
+	margin-top: -1rem;
+	z-index: 3;
+}
+.app main .con .box{
+	width: 7rem;
+	height:100%;
+	margin: 0 auto;
+	border-radius: 0.2rem;
+	box-shadow: 0 0 0.15rem 0.05rem #FFEFF0;
+	background-color: #fff;
+	padding-top: 0.5rem;
+}
+.app main .con .box .info{
+	width:33.3%;
+	height:2rem;
+	float: left;
+}
+.app main .con .box .info img{
+	margin-left: 0.48rem;
+}
+.app main .con .box .info .word{
+	color:#000;
+	font-size: 0.22rem;
+	margin-left: 0.5rem;
+	margin-top: 0.2rem;
+	font-weight: bold;
+}
+.app main .con .box .info .word a{
+	color:#000;
+}

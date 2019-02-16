@@ -1,0 +1,241 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+}
+body{
+	background-color: #fff;
+	font-size: 0.2rem;
+}
+
+
+
+.app {
+	width: 100%;
+	height: auto;
+}
+.app header{
+	width:100%;
+	height:0.8rem;
+	background:-webkit-linear-gradient(left,#FE4735,#FE3644,#FE2552)
+}
+.app header .con{
+	width:7.03rem;
+	height:100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.app header .con .icon_sousuo{
+	width:0.34rem;
+	height:0.37rem;
+}
+.app header .con .word{
+	font-size: 0.3rem;
+	color:#fff;
+	font-weight: bold;
+}
+.app header .con .icon_fabu{
+	width:0.4rem;
+	height:0.44rem;
+}
+nav{
+	width:100%;
+	height:2.9rem;
+	border: 1px solid rgba(0,0,0,0);
+	background-image: url("../img/background10.png");
+	background-size: 7.5rem auto;
+	background-position: 0 -1.5rem;
+}
+nav .img_box{
+	margin-left: 2.84rem;
+	margin-top: 0.4rem;
+}
+nav .word{
+	margin-left: 3.51rem;
+	margin-top: 0.2rem;
+	color:#333333;
+	font-weight: bold;
+	font-size: 0.22rem;
+}
+main{
+	width:100%;
+	height:auto;
+}
+main .section1{
+	width: 100%;
+	height:0.63rem;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+main .section1 .days{
+	width:1.7rem;
+	height:0.43rem;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	margin-left: 1.34rem;
+}
+main .section1 .zang{
+	width:1.7rem;
+	height:0.43rem;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	margin-right: 1.34rem;
+}
+main .section2{
+	width:100%;
+	height:1.61rem;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+main .section2 .button1{
+	width:2.17rem;
+	height:0.76rem;
+	border: 0.01rem solid #fff;
+	border-radius: 0.32rem;
+	background-color: #F83853;
+	color:#fff;
+	margin-left: 1.43rem;
+	line-height: 0.76rem;
+	text-align: center;
+	font-size: 0.25rem;
+}
+main .section2 .button2{
+	width:2.17rem;
+	height:0.76rem;
+	border: 0.01rem solid #fff;
+	border-radius: 0.32rem;
+	background-color: #FB859A;
+	color:#fff;
+	margin-right: 1.47rem;
+	line-height: 0.76rem;
+	text-align: center;
+	font-size: 0.25rem;
+}
+main .section3{
+	width:100%;
+	height:auto;
+}
+main .section3 .time_row{
+	width:2.11rem;
+	height:auto;
+	float:left;
+}
+main .section3 .time_row .time1{
+	width:100%;
+	height:2.72rem;
+	position: relative;
+	top:0;
+	left:0;
+	border:0.01rem solid #fff;
+}
+main .section3 .time_row .time1 .word{
+	margin-left: 0.48rem;
+	margin-top:0.3rem;
+	font-size: 0.25rem;
+	color:#333;
+	font-weight: bold;
+}
+main .section3 .time_row .time1 .tuxing1{
+	width: 0.2rem;
+	height:0.2rem;
+	border:0.05rem solid #EF3162;
+	background-color: #FFB6C9;
+	border-radius: 50%;
+	position: absolute;
+	left:1.21rem;
+	top:0.05rem;
+}
+main .section3 .time_row .time1 .tuxing2{
+	width:0.06rem;
+	height:2.3rem;
+	background-color: #FE3B3F;
+	position: absolute;
+	left:1.32rem;
+	top:0.4rem;
+}
+main .section3 .time_row .time2{
+	width:100%;
+	height:2.72rem;
+	position: relative;
+	top:0;
+	left:0;
+	border:0.01rem solid #fff;
+}
+main .section3 .time_row .time2 .word{
+	margin-left: 0.48rem;
+	margin-top:0.3rem;
+	font-size: 0.25rem;
+	color:#333;
+	font-weight: bold;
+}
+main .section3 .time_row .time2 .word span{
+	display: block;
+}
+main .section3 .time_row .time2 .tuxing1{
+	width: 0.2rem;
+	height:0.2rem;
+	border:0.05rem solid #EF3162;
+	background-color: #FFB6C9;
+	border-radius: 50%;
+	position: absolute;
+	left:1.21rem;
+	top:0.05rem;
+}
+main .section3 .time_row .time2 .tuxing2{
+	width:0.06rem;
+	height:2.3rem;
+	background-color: #FE3B3F;
+	position: absolute;
+	left:1.32rem;
+	top:0.4rem;
+}
+main .section3 .con{
+	width:5.39rem;
+	height:auto;
+	float:left;
+}
+main .section3 .con .con1{
+	width:100%;
+	height:2.72rem;
+}
+main .section3 .con .con1 .add{
+	width:1.4rem;
+	height:1.4rem;
+	background-color: #FFB3AC;
+	line-height: 1.4rem;
+	text-align: center;
+	font-size: 0.5rem;
+	color:#FFF4F3;
+	border-radius: 0.08rem;
+}
+main .section3 .con .con1 .box{
+	margin-top: 0.3rem;
+}
+main .section3 .con .con1 .box img{
+	display: inline;
+}
+main .section3 .con .con2{
+	width:100%;
+	height:2.72rem;
+}
+main .section3 .con .con2 .picture img{
+	display: inline;
+}
+main .section3 .con .con2 .box{
+	margin-top: 0.3rem;
+}
+main .section3 .con .con2 .box img{
+	display: inline;
+}

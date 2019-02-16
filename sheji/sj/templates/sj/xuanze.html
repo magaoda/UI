@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'sj/css/xuanze.css' %}">
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+    <title>选择登录注册</title>
+</head>
+<body>
+  <div class="top">
+    <div class="center"><span>我的</span></div>
+  </div>
+  <div class="content">
+      <div class="img"><a href=""></a></div>
+      <div class="box">
+        <div class="reg"><a href="{% url 'sj:reg'%}">注册</a></div>
+        <div class="login"><a href="{% url 'sj:login'%}">登录</a></div>
+      </div>
+
+  </div>
+</body>
+</html>

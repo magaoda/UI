@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+	<script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'sj/css/base.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'sj/css/index0.css' %}">
+</head>
+<body>
+    <header>
+        <div class="top">
+            <a href="{% url 'sj:shouyexx' %}"><img src="{% static 'sj/img/返回.png' %}" id="fanhui"></a>
+            <span>搜索</span>
+            <a href=""><img src="{% static 'sj/img/照相机.png' %}" id="photo"></a>
+        </div>
+        <div class="bottom">
+            <div class="search">
+                <a href="index3.html"><span>请输入您要搜索的关键字</span></a>
+                <a href="index1.html"><img src="{% static 'sj/img/搜索.png' %}" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <first>
+            <div class="title">
+                <img src="{% static 'sj/img/历史.png' %}" alt="">
+                <span id="zi1">历史</span>
+                <span id="zi2">搜索</span>
+            </div>
+            <div class="con">
+                <span id="zi3">阿拉斯加金毛犬</span>
+                <span id="zi4"># 封面大赛 #</span>
+                <span id="zi5">喂养波斯猫的禁忌</span>
+                <span id="zi6">狗狗技能</span>
+                <span id="zi7">如何快速清理狗毛</span>
+            </div>
+            <div class="xia">
+                <img src="{% static 'sj/img/垃圾桶.png' %}" alt="">
+                <span>清除搜索记录</span>
+            </div>
+        </first>
+        <second>
+            <div class="title">
+                <img src="{% static 'sj/img/历史.png' %}" alt="">
+                <span id="zi11">热门</span>
+                <span id="zi21">搜索</span>
+            </div>
+            <div class="con">
+                <div class="box">#10月封面萌宠投票</div>
+                <div class="box box1">表情包</div>
+                <div class="box box1">萌宠大集结</div>
+                <div class="box box1">喵星人俱乐部</div>
+            </div>
+        </second>
+    </main>
+    <bottom>
+        <div class="bottom">
+            <a href="{% url 'sj:index2' %}"><img src="{% static 'sj/img/语音2.png' %}" alt=""></a>
+        </div>
+    </bottom>
+</body>
+</html>

@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: #fff;
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+    -webkit-font-smoothing: antialiased;
+    font-family: 苹方;
+}
+.all{
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    opacity: 0.8;
+}
+.top{
+    width:100% ;
+    height: 0.88rem;
+    background-color: #fe413a;
+    position:fixed;
+    top: 0;
+    z-index: 300;
+}
+.top .left{
+    width: 0.22rem;
+    height: 0.4rem;
+    padding: 0.25rem 0.22rem;
+    float: left;
+}
+.top .left a{
+    display: block;
+    width: 0.22rem;
+    height: 0.4rem;
+    background-image: url("../img/zuo.png");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease 0ms;
+}
+.top .center{
+    width: 4.5rem;
+    height: 0.88rem;
+    line-height: 0.95rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #ffffff;
+    margin: 0 auto;
+}
+.top .reg{
+    width: 0.6rem;
+    height: 0.25rem;
+    padding: 0.32rem 0.3rem;
+    float: right;
+}
+.top .reg a{
+    display: block;
+    width: 0.6rem;
+    height: 0.25rem;
+    color: #fff;
+    font-size: 0.28rem;
+}
+.img{
+    width: 100%;
+    height: 2.7rem;
+    margin-top: 1.5rem;
+    color: #fe3d3e;
+    font-size: 0.3rem;
+    text-align: center;
+}
+.img a{
+    display: block;
+    width: 1.7rem;
+    height: 1.7rem;
+    margin: 0 auto;
+    background-image: url("../img/tx.png");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease 0ms;
+
+}
+.img span{
+    display: block;
+    margin-top: 0.4rem;
+}
+.content{
+    width: 100%;
+    height: 4rem;
+    margin-top: 2.4rem;
+}
+
+.content a{
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0 auto;
+    background-image: url("../img/zw.png");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease 0ms;
+}
+.san{
+    width: 100%;
+    height: 1rem;
+    margin-top: 1rem;
+}
+.san a{
+    display: block;
+    width: 5rem;
+    height: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    color:#fe5545;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'sj/css/login.css' %}">
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+    <title>登录</title>
+</head>
+<body>
+    <div class="all"></div>
+  <div class="top">
+    <div class="left"><a href="{% url 'sj:xuanze'%}"></a></div>
+    <div class="reg"><a href="{% url 'sj:reg'%}">注册</a></div>
+    <div class="center"><span>登录</span></div>
+  </div>
+  <div class="img">
+      <a href=""></a>
+      <span>让宠物优雅的与您相伴</span>
+    </div>
+    <form action="/login/" method="POST">
+      {% csrf_token %}
+        <div class="content">
+            <div class="box">
+                <div class="sj">
+                    <a href=""></a>
+                    <input type="text" class="input" name="phonetell" placeholder="请输入您的手机号" id="phone">
+                      <div class="cw" ></div>
+                      <div class="ts" ></div>
+                      <div class="zq" ></div>
+                </div>
+                <div class="mm">
+                    <a href=""></a>
+                    <input type="password" class="input" name="password" placeholder="请输入您的密码" id="password">
+                    <div class="zq"></div>
+                    <div class="cw"></div>
+                    <div class="ts"></div>
+                </div>
+                <div class="wjxg">
+                    <div class="wj">
+                        <a href="" class="yuan"></a>
+                        <a href="">忘记密码</a>
+                    </div>
+                    <div class="xg">
+                        <a href="" class="yuan"></a>
+                        <a href="">修改密码</a>
+                    </div>
+                </div>
+                <!--<button type="submit">登录</button>-->
+                <div class="button" id="btn">登录</div>
+            </div>
+        </div>
+    </form>
+  <div class="san">
+      <div class="pingTai">
+        <div class="line">
+            <div class="line1"></div>
+            <span>第三方登录平台</span>
+            <div class="line2"></div>
+        </div>
+
+      </div>
+    <div class="qww">
+          <div class="qq"><a href="javascript:;" id="qq"></a></div>
+          <div class="wx"><a href="javascript:;"></a></div>
+          <div class="wb"><a href="javascript:;"></a></div>
+     </div>
+  </div>
+  <div class="yunxu">
+      <div class="tu1"><a href="javascript:;"></a></div>
+      <div class="zi">
+          <div class="xian1"></div>
+          <span>是否允许访问您的微信</span>
+          <div class="xian2"></div>
+      </div>
+      <div class="xuan">
+          <div class="qx"><a href="" >取消</a></div>
+          <div class="yx"><a href="" >允许</a></div>
+          <div class="shu"></div>
+      </div>
+  </div>
+</body>
+</html>
+<script>
+    $(".wx").click(function(){
+        $(".all").css({
+            display:"block",
+        })
+        $(".img a").css({
+            position: "fixed",
+            left: "2.9rem",
+            zIndex: 11,
+        })
+        $(".img span").css({
+            position: "fixed",
+            left: "2.4rem",
+            top:"3rem",
+        })
+        $(".yunxu").css({
+            display:"block",
+            zIndex: 20,
+        })
+    })
+    $("#phone").keyup(function () {
+       var con=$("#phone").val().length
+      // console.log(con)
+      if (con<11){
+        $(".sj .cw").css('display','none')
+        $(".sj .zq").css('display','none')
+        $(".sj .ts").css('display','none')
+      }
+      else if (con>11){
+        $(".sj .cw").css('display','block')
+        $(".sj .ts").css('display','block')
+        $(".sj .zq").css('display','none')
+        }
+      else {
+        $.ajaxSetup({data: {csrfmiddlewaretoken: '{{ csrf_token }}'}})
+        $.ajax({
+          url:"{% url 'sj:phonetell' %}",
+          type:"post",
+          data:{'phonetell':$("#phone").val()},
+          success:function(e){
+              if(e.statu=='phzq'){
+                $(".sj .zq").css('display','block')
+                $(".sj .cw").css('display','none')
+                $(".sj .ts").css('display','none')
+              }else {
+                $(".sj .cw").css('display','block')
+                $(".sj .ts").css('display','block')
+                $(".sj .zq").css('display','none')
+              }
+          }
+      })
+      }
+
+    })
+    $("#password").keyup(function () {
+       var con=$("#password").val().length
+      if (con<6){
+        $(".mm .cw").css('display','none')
+        $(".mm .zq").css('display','none')
+        $(".mm .ts").css('display','none')
+      }
+      else if (con>6){
+        $(".mm .cw").css('display','block')
+        $(".mm .ts").css('display','block')
+        $(".mm .zq").css('display','none')
+        }
+      else {
+        $.ajaxSetup({data: {csrfmiddlewaretoken: '{{ csrf_token }}'}})
+        $.ajax({
+          url:"{% url 'sj:password' %}",
+          type:"post",
+          data:{'password':$("#password").val()},
+          success:function(e){
+              if(e.statu=='pazq'){
+                $(".mm .zq").css('display','block')
+                $(".mm .cw").css('display','none')
+                $(".mm .ts").css('display','none')
+              }else {
+                $(".mm .cw").css('display','block')
+                $(".mm .ts").css('display','block')
+                $(".mm .zq").css('display','none')
+              }
+          }
+      })
+      }
+    })
+    var btn=$("#btn")
+    btn.on("click",function(){
+      $.ajaxSetup({data: {csrfmiddlewaretoken: '{{ csrf_token }}'}})
+      $.ajax({
+        url:"{% url 'sj:login' %}",
+        type:"post",
+        data:{'phonetell':$("#phone").val(),'password':$("#password").val()},
+        success:function(e){
+            if(e.statu=='ok'){
+              window.location.href="{% url 'sj:shouye'  %}"
+            }else {
+              window.location.href="{% url 'sj:login'  %}"
+            }
+        }
+
+      })
+    })
+  $("#password").blur(function () {
+   var con=$("#password").val().length
+      if (con == 4){
+        $(".mm .cw").css('display','block')
+        $(".mm .zq").css('display','none')
+        $(".mm .ts").css('display','block')
+      }
+  })
+</script>

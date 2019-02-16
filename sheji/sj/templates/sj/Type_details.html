@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>种类详情</title>
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'sj/css/Type_details.css' %}">
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <div class="con">
+                <div class="icon_sousuo">
+                  <a href="{% url 'sj:species_con'%}"><img src="{% static 'sj/img/jiantou.png' %}" width="11" height="20" alt=""></a>
+
+                </div>
+                <div class="word">
+                    <span>种类详情</span>
+                </div>
+                <div class="icon_fabu">
+                    <img src="{% static 'sj/img/right_icon.png' %}" width="20" height="17" alt="">
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="section1">
+
+            </section>
+            <section class="section2">
+                <div class="name">
+                    <span>西伯利亚金毛犬</span>
+                </div>
+                <div class="picture">
+                    <img src="{% static 'sj/img/jm.png' %}" width="93" height="93" alt="">
+                    <img src="{% static 'sj/img/gou2.png' %}" width="93" height="93" alt="">
+                    <img src="{% static 'sj/img/gou3.png' %}" width="93" height="93" alt="">
+                </div>
+                <div class="jianjie">
+                    <h2>
+                        简
+                        <img src="{% static 'sj/img/xiaogou.png' %}" width="22" height="22" alt="">
+                        介
+                    </h2>
+                    <div class="con1">
+                        <span>
+                            <i style="color:#FE7E71;">金毛犬</i> 是一种匀称、有力、活泼的犬种，学名为金毛巡回猎犬。表情友善，个性热情，机警，自信。
+                        </span>
+                    </div>
+                    <div class="con2">
+                        <span>大小：（公）<i style="color:#FE7E71;">51∽61</i>cm（母）<i style="color:#FE7E71;">51∽56</i>cm</span>
+                    </div>
+                    <div class="con3">
+                        <span>寿命：<i style="color:#FE7E71;">12∽15</i>年</span>
+                    </div>
+                    <div class="con4">
+                        <span>价格：<i style="color:#FE7E71;">500∽4500</i>元</span>
+                    </div>
+                    <div class="con5">
+                        <span>犬类智商排名：第四名</span>
+                    </div>
+                </div>
+                <div class="tezheng">
+                    <h2>
+                        特
+                        <img src="{% static 'sj/img/xiaogou.png' %}" width="22" height="22" alt="">
+                        征
+                    </h2>
+                    <div class="info">
+                        <div class="part1">
+                            <div class="box">
+                                <span>活泼度</span>
+                                <i style="background-color: #FE35E9;"></i>
+                            </div>
+                            <div class="box">
+                                <span>掉毛度</span>
+                                <i style="background-color: #EBDC36;"></i>
+                            </div>
+                            <div class="box">
+                                <span>可训度</span>
+                                <i style="background-color: #45CF3F;"></i>
+                            </div>
+                        </div>
+                        <div class="part2">
+                            <img src="{% static 'sj/img/tezheng.png' %}" width="141" height="121" alt="">
+                        </div>
+                        <div class="part3">
+                            <div class="box">
+                                <span>粘人度</span>
+                                <i style="background-color: #FE4735;"></i>
+                            </div>
+                            <div class="box">
+                                <span>喜叫度</span>
+                                <i style="background-color: #FE2552;"></i>
+                            </div>
+                            <div class="box">
+                                <span>拆家度</span>
+                                <i style="background-color: #3A35FE;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="siyang">
+                    <h2>
+                        饲
+                        <img src="{% static 'sj/img/xiaogou.png' %}" width="22" height="22" alt="">
+                        养
+                    </h2>
+                    <div class="img_siyang">
+                        <img src="{% static 'sj/img/shenqing.png' %}" width="327" height="145" alt="">
+                    </div>
+                    <div class="article">
+                        <p>
+                            1.定期带金毛狗也去做预防注射。此外，植入芯片，疾病治疗，都是金毛成长过程上必须费心的事情。
+                        </p>
+                    </div>
+                    <div class="article">
+                        <p>
+                            2.由于金毛幼犬尚未学会定点排泄，排泄的次数又多。因此，饲主也许要很有耐心的一整天拿着报纸，跟在金毛的屁股后边等着接受狗狗的便
+                        </p>
+                    </div>
+                    <div class="article">
+                        <p>
+                            3.饲主要很费心梳理金毛那厚厚的背毛，不但每天需梳毛整理，而且，狗狗在吃饭的时候，还需要注意不要让它的嘴巴吃脏，也要避免被食物
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    {% load static %}
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/indexi.js' %}"></script>
+    <script src="{% static 'sj/js/shouye.js' %}"></script>
+  <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+</head>
+<body>
+<div class="shouye">
+    <div class="header">
+        <div class="top">首页</div>
+        <div class="input">
+             <input type="text" class="aaa" placeholder="搜索">
+            <div class="ssi">
+              <img src="{% static 'sj/img/搜索icon.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="lunbo">
+        <div class="box huati">
+            <img src="{% static 'sj/img/话题.png' %}" alt="">
+            <div class="cansai">
+                <img src="{% static 'sj/img/点击参赛按钮.png' %}" alt="">
+            </div>
+        </div>
+        <div class="box banner">
+            <img src="{% static 'sj/img/banner2.png' %}" alt="">
+        </div>
+
+        <div class="box banner1">
+            <img src="{% static 'sj/img/banner2.png' %}" alt="">
+        </div>
+
+        <div class="yuan">
+            <div class="circle hot"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+    <div>
+        <img src="{% static 'sj/img/文章标签.png' %}../static/" alt="">
+    </div>
+    <div class="con">
+        <img src="{% static 'sj/img/包子饺子评论.png' %}" alt="">
+        <div class="lianxi">
+            <img src="{% static 'sj/img/联系.png' %}" alt="">
+        </div>
+        <div class="dianzan">
+            <img src="{% static 'sj/img/点赞按钮.png' %}" alt="">
+        </div>
+        <div class="pinglun">
+            <img src="{% static 'sj/img/评论按钮.png' %}" alt="">
+        </div>
+        <div class="zhuanfa">
+            <img src="{% static 'sj/img/转发按钮.png' %}" alt="">
+        </div>
+        <div class="lookpl">
+            <span>查看所有评论</span>
+        </div>
+    </div>
+    <div class="kongbai"></div>
+</div>
+<footer>
+      <div class="icon">
+        <a href="{% url 'sj:shouye'%}"><img src="{% static 'sj/img/shouye.png' %}" width="30" height="24" alt=""></a>
+      </div>
+      <div class="icon">
+          <a href="{% url 'sj:foster_care'%}"><img src="{% static 'sj/img/jiyang.png' %}" width="36" height="36" alt=""></a>
+      </div>
+      <div class="icon">
+          <a href="{% url 'sj:mine'%}"><img src="{% static 'sj/img/my.png' %}" width="30" height="24" alt=""></a>
+      </div>
+      <div class="word_shouye">
+        <a href="{% url 'sj:shouye'%}" style="color: #FE8D9F"><span>首页</span></a>
+
+      </div>
+      <div class="word_jiyang">
+        <a href="{% url 'sj:foster_care'%}" style="color: #FE8D9F"><span>寄养</span></a>
+
+      </div>
+      <div class="word_my">
+        <a href="{% url 'sj:mine'%}" style="color: #FE8D9F"><span>我的</span></a>
+
+      </div>
+ </footer>
+{#<div class="nav">#}
+{#  <a href="{% url 'sj:shouye'%}"><img src="{% static 'sj/img/首页1.png' %}" alt=""></a>#}
+{#  <a href="{% url 'sj:foster_care'%}"><img src="{% static 'sj/img/寄养.png' %}" alt=""></a>#}
+{#  <a href="{% url 'sj:mine'%}"><img src="{% static 'sj/img/我的.png' %}" alt=""></a>#}
+{##}
+{#</div>#}
+
+</body>
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+       text-decoration:none;
+      out-line: none
+    }
+    .shouye{
+        width: 7.5rem;
+        height: 13.34rem;
+    }
+    .shouye img{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+        height: 1.8rem;
+        background: #FE3742;
+        position: relative;
+    }
+    .header .top{
+      width: 100%;
+      height: 0.86rem;
+      font-size: 0.32rem;
+      color: #fff;
+      text-align: center;
+      line-height: 0.86rem;
+    }
+    .input{
+        position: relative;
+        height: 0.5rem;
+        margin-top:0.1rem ;
+    }
+    .aaa{
+        width: 93%;
+        height: 0.5rem;
+        position: absolute;
+        bottom: 0.05rem;
+        left:0.2rem;
+        border-radius: 0.5rem;
+        outline:none;
+        text-indent: 0.2rem;
+        overflow: hidden;
+        border: 0;
+    }
+    input::-webkit-input-placeholder {
+      color: #e0e0e0;
+    }
+    input:-webkit-autofill { box-shadow: 0 0 0px 1000px #fcfcfc inset !important;}
+    .ssi{
+      width: 4%;
+      height: 4%;
+        position: absolute;
+        right:0.5rem;
+        top:-0.66rem;
+    }
+    .lunbo{
+        width: auto;
+        height: 3.2rem;
+        position: relative;
+    }
+    .box{
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    .huati{
+        z-index: 10;
+    }
+    .banner{
+        z-index: 5;
+    }
+    .banner1{
+        z-index: 5;
+    }
+    .yuan{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top:2.6rem;
+        right:3rem;
+        z-index: 999;
+    }
+    .circle{
+        width: 0.14rem;
+        height: 0.14rem;
+        border-radius: 50%;
+        background: #FD8D7A;
+        margin-left: 0.16rem;
+        margin-right: 0.16rem;
+    }
+    .hot{
+        background: #FE4735;
+    }
+    .cansai img{
+        width:1.8rem ;
+        height: 0.3rem;
+        display: block;
+        position: absolute;
+        top:2.2rem;
+        right:1.4rem;
+    }
+    .con{
+        position: relative;
+        font-size: 0.2rem;
+    }
+    .con img{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .lianxi img{
+        width: 1.5rem;
+        height: 0.5rem;
+        position: absolute;
+        top:0.2rem;
+        right:0.4rem;
+    }
+    .dianzan img{
+        width: 0.8rem;
+        height: 0.8rem;
+        position: absolute;
+        top:5.28rem;
+        right:1.9rem;
+    }
+    .pinglun img{
+        width: 0.8rem;
+        height: 0.8rem;
+        position: absolute;
+        top:5.28rem;
+        right:1.1rem;
+    }
+    .zhuanfa img{
+        width: 0.8rem;
+        height: 0.8rem;
+        position: absolute;
+        top:5.28rem;
+        right:0.3rem;
+    }
+    .con{
+        width: auto;
+        height: 7.6rem;
+    }
+    .lookpl{
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.2rem;
+        color:#4C4C4C;
+    }
+    .kongbai{
+        height: 0.8rem;
+    }
+    .nav{
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        background: #FEEFF2;
+    }
+    .nav img{
+        display: block;
+        width: 9%;
+        height: 0.5rem;
+        margin-left: 0.85rem;
+        margin-right: 0.85rem;
+    }
+  footer{
+    width:100%;
+    height:1.53rem;
+    background-size: 7.5rem auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom:0;
+    background-color: #fff;
+  }
+    footer .icon:first-child{
+    margin-left: 0.96rem;
+    }
+    footer .icon:nth-child(2){
+    }
+    footer .icon:nth-child(3){
+    margin-right: 0.93rem;
+    }
+    footer .word_shouye{
+    position: absolute;
+    top: 1.1rem;
+    left: 1.02rem;
+    color:#FE939A;
+      font-size: 0.3rem;
+    }
+    footer .word_jiyang{
+    position: absolute;
+    top: 1.1rem;
+    left: 3.52rem;
+    color:#FE3743;
+      font-size: 0.3rem;
+    }
+    footer .word_my{
+    position: absolute;
+      top: 1.1rem;
+    left: 5.95rem;
+    color:#FE939A;
+    font-size: 0.3rem;
+    }
+</style>
+<script>
+  $(".aaa").focus(function () {
+   location.href="{% url 'sj:index0' %}"
+  })
+</script>

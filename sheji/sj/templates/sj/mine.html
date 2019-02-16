@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的</title>
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'sj/css/mine.css' %}">
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+
+</head>
+<body>
+    <!--头信息-->
+    <header class="head">
+        <header class="main_box">
+            <a href="" id="settings"><img src="{% static 'sj/img/settings.png' %}" alt=""></a>
+            <span id="mine">我的</span>
+            <a href="{% url 'sj:personal_dynamics'%}" id="messages"><img src="{% static 'sj/img/message.png' %}" alt=""></a>
+        </header>
+    </header>
+    <!--头像部分-->
+    <div class="head_photo">
+        <div class="head_photo_main">
+            <!--头像框-->
+            <div id="head_photo_box">
+                <img src="{% static 'sj/img/head_photo.png' %}" alt="">
+            </div>
+            <!--/个人信息-->
+            <div class="personal_info">
+                <!--名字-->
+                <div id="personal_name">
+                    <span class="mine_name">简简单单</span>
+                    <div class="sex_icon">
+                        <div class="sex_icon_circle"></div>
+                        <div class="sex_icon_heng"></div>
+                        <div class="sex_icon_shu"></div>
+                    </div>
+                    <div class="personal_grade">Lv9</div>
+                </div>
+                <!--联系方式-->
+                <div id="personal_tel">
+                    <img src="{% static 'sj/img/tell.png' %}" alt="">
+                    <div class="mine_tel">378852418</div>
+                </div>
+                <!--信誉-->
+                <div id="personal_credit">
+                    <img src="{% static 'sj/img/credit.png' %}" alt="">
+                    <div class="personal_credit_value">
+                        <span>信誉值:</span>
+                        <div class="personal_credit_tiao">
+                            <div class="personal_credit_values"></div>
+                        </div>
+                        <span style="color: #FE4636;font-weight: 600">839</span>
+                    </div>
+                </div>
+                <!--签到(点击事件)-->
+                <div id="sign_in">
+                    <img src="{% static 'sj/img/sign_in.png' %}" alt="">
+                    <span style="font-size: 0.20rem">签到</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--我的发布和我的宠友-->
+    <main class="issue_and_petfriends">
+        <main class="issue_and_petfriends_box">
+            <!--发布-->
+            <main id="issue">
+              <a href="{% url 'sj:issue'%}">
+                <main class="issue_img">
+                  <img src="{% static 'sj/img/issue.png' %}" alt="" style="display: block;height: 40%;width: 40%">
+
+                </main></a>
+                <main class="issue_message">我的发布</main>
+            </main>
+            <main id="pet_friend">
+                <main class="pet_friend_img">
+                    <img src="{% static 'sj/img/address_book.png' %}" alt="" style="display: block;height: 40%;width: 40%">
+                </main>
+                <main class="pet_friend_message">我的宠友</main>
+            </main>
+        </main>
+    </main>
+    <!--我的萌宠-->
+    <main class="my_pet">
+        <main class="my_pet_box">
+            <!--标题-->
+            <main class="my_pet_title">
+                <!--我的宠物图标-->
+                <img src="{% static 'sj/img/bear.png' %}" alt="" style="display: block;height: 0.52rem;width: 0.48rem">
+                <span style="width: 1.10rem;height: 0.26rem;font-size: 0.26rem;margin-left: 0.16rem">我的宠物</span>
+            </main>
+            <!--数据库数据-->
+            <main class="children children1">
+                <main class="children_detail">
+                    <!--宠物头像-->
+                    <main id="children_datail_left">
+                      <a href="{% url 'sj:my_pet'%}"><img src="{% static 'sj/img/pipi.png' %}" alt="" style="display: block;width: 100%;height: 100%"></a>
+
+                    </main>
+                    <!--宠物其他信息-->
+                    <main id="children_detail_right">
+                        <main id="children_detail_top">
+                            <main id="children_detail_top_left">
+                              <img src="{% static 'sj/img/name.png' %}" alt="" style="display: block;height: 100%;width: 0.24rem;transform: scale(1.8);position: relative;top: 0.05rem;">
+
+                                <span style="font-size: 0.24rem;padding: 0 0.16rem 0 0.08rem">皮皮</span>
+                                <span style="font-size: 0.24rem">(西伯利亚雪撬犬)</span>
+                            </main>
+                            <!--编辑-->
+                            <main id="children_detail_top_right">
+                                <img src="{% static 'sj/img/edit.png' %}" alt="" style="display: block;height: 100%;width: 0.24rem;">
+                                <span style="font-size: 0.24rem">编辑</span>
+                            </main>
+                        </main>
+                        <main id="children_detail_bottom">
+                            <main id="children_detail_bottom_left">
+                                <main id="children_age">
+                                    <img src="{% static 'sj/img/age.png' %}" alt="" style="display: block;height: 90%;width: 0.24rem">
+                                    <span style="font-size: 0.24rem">8岁</span>
+                                </main>
+                                <main id="children_weight">
+                                    <img src="{% static 'sj/img/weight.png' %}" alt="" style="display: block;height: 100%;width: 0.28rem;transform: scale(1.8);position: relative;top: 0.05rem;">
+                                    <span style="font-size: 0.24rem">18kg</span>
+                                </main>
+                            </main>
+                            <!--删除-->
+                            <main id="children_detail_bottom_right">
+                                <img src="{% static 'sj/img/delete.png' %}" alt="" style="display: block;height: 100%;width: 0.24rem;">
+                                <span style="font-size: 0.24rem">删除</span>
+                            </main>
+                        </main>
+                    </main>
+                </main>
+            </main>
+            <!--波斯猫-->
+            <main class="children children1">
+                <main class="children_detail">
+                    <!--宠物头像-->
+                    <main id="children_datail_left">
+                        <img src="{% static 'sj/img/chaos.png' %}" alt="" style="display: block;width: 100%;height: 100%">
+                    </main>
+                    <!--宠物其他信息-->
+                    <main id="children_detail_right">
+                        <main id="children_detail_top">
+                            <main id="children_detail_top_left">
+                                <img src="{% static 'sj/img/name.png' %}" alt="" style="display: block;height: 100%;width: 0.24rem;transform: scale(1.8);position: relative;top: 0.05rem;">
+                                <span style="font-size: 0.24rem;padding: 0 0.16rem 0 0.08rem">馄饨</span>
+                                <span style="font-size: 0.24rem">(波斯猫)</span>
+                            </main>
+                            <!--编辑-->
+                            <main id="children_detail_top_right">
+                                <img src="{% static 'sj/img/edit.png' %}" alt="" style="display: block;height: 100%;width: 0.24rem;">
+                                <span style="font-size: 0.24rem">编辑</span>
+                            </main>
+                        </main>
+                        <main id="children_detail_bottom">
+                            <main id="children_detail_bottom_left">
+                                <main id="children_age">
+                                    <img src="{% static 'sj/img/age.png' %}" alt="" style="display: block;height: 90%;width: 0.24rem">
+                                    <span style="font-size: 0.24rem">8岁</span>
+                                </main>
+                                <main id="children_weight">
+                                    <img src="{% static 'sj/img/weight.png' %}" alt="" style="display: block;height: 100%;width: 0.28rem;transform: scale(1.8);position: relative;top: 0.05rem;">
+                                    <span style="font-size: 0.24rem">18kg</span>
+                                </main>
+                            </main>
+                            <!--删除-->
+                            <main id="children_detail_bottom_right">
+                                <img src="{% static 'sj/img/delete.png' %}" alt="" style="display: block;height: 100%;width: 0.24rem;">
+                                <span style="font-size: 0.24rem">删除</span>
+                            </main>
+                        </main>
+                    </main>
+                </main>
+            </main>
+            <main class="children children1">
+                <main class="children_detail">
+                    <!--宠物头像-->
+                    <main id="children_datail_left">
+                        <img src="{% static 'sj/img/coriander.png' %}" alt="" style="display: block;width: 100%;height: 100%">
+                    </main>
+                    <!--宠物其他信息-->
+                    <main id="children_detail_right">
+                        <main id="children_detail_top">
+                            <main id="children_detail_top_left">
+                                <img src="{% static 'sj/img/name.png' %}" alt="" style="display: block;height: 100%;width: 0.24rem;transform: scale(1.8);position: relative;top: 0.05rem;">
+                                <span style="font-size: 0.24rem;padding: 0 0.16rem 0 0.08rem">香菜</span>
+                                <span style="font-size: 0.24rem">(金毛犬)</span>
+                            </main>
+                            <!--编辑-->
+                            <main id="children_detail_top_right">
+                                <img src="{% static 'sj/img/edit.png' %}" alt="" style="display: block;height: 100%;width: 0.24rem;">
+                                <span style="font-size: 0.24rem">编辑</span>
+                            </main>
+                        </main>
+                        <main id="children_detail_bottom">
+                            <main id="children_detail_bottom_left">
+                                <main id="children_age">
+                                    <img src="{% static 'sj/img/age.png' %}" alt="" style="display: block;height: 90%;width: 0.24rem">
+                                    <span style="font-size: 0.24rem">8岁</span>
+                                </main>
+                                <main id="children_weight">
+                                    <img src="{% static 'sj/img/weight.png' %}" alt="" style="display: block;height: 100%;width: 0.28rem;transform: scale(1.8);position: relative;top: 0.05rem;">
+                                    <span style="font-size: 0.24rem">18kg</span>
+                                </main>
+                            </main>
+                            <!--删除-->
+                            <main id="children_detail_bottom_right">
+                                <img src="{% static 'sj/img/delete.png' %}" alt="" style="display: block;height: 100%;width: 0.24rem;">
+                                <span style="font-size: 0.24rem">删除</span>
+                            </main>
+                        </main>
+                    </main>
+                </main>
+            </main>
+        </main>
+    </main>
+    <!--添加宠物-->
+    <div class="add">
+        <div class="add_box">
+          <a href="{% url 'sj:add_pet'%}"> <img src="{% static 'sj/img/add.png' %}" alt="" style="display: block;height: 0.42rem;width: 0.42rem"></a>
+
+            <span style="font-size: 0.26rem;padding-left: 0.18rem;">添加宠物</span>
+        </div>
+    </div>
+    <!--底部-->
+    <footer class="foot">
+        <footer class="extra" style="height: 1.10rem;width: 1.10rem;margin: 0 auto;background: #FEEFF2;border-radius:50%;">
+
+        </footer>
+        <footer class="foot_box">
+            <footer id="index" class="foot2">
+              <a href="{% url 'sj:shouye'%}" ><img src="{% static 'sj/img/index1.png' %}" alt="" style="display: block;height: 0.5rem;width: 100%;margin-top: 0.10rem">
+               </a>
+                 <span style="font-size: 0.22rem;line-height: 0.40rem;color: #FE8D9F !important;">首页</span>
+            </footer>
+            <footer id="jiyang" class="foot2">
+              <a href="{% url 'sj:foster_care'%}" >
+                <img src="{% static 'sj/img/jiyang.png' %}" alt="" style="display: block;height: 0.5rem;width: 100%;margin-top: 0.10rem;transform: scale(1.2)">
+                </a>
+              <span style="font-size: 0.22rem;line-height: 0.40rem;color: #FE8D9F !important;">寄养</span>
+            </footer>
+            <footer id="my_infos" class="foot2">
+              <a href="{% url 'sj:mine'%}" ><img src="{% static 'sj/img/mine.png' %}" alt="" style="display: block;height: 0.5rem;width: 85%;margin-top: 0.10rem">
+                </a>
+              <span style="font-size: 0.22rem;line-height: 0.40rem;color: #FE2D4C">我的</span>
+            </footer>
+        </footer>
+    </footer>
+</body>
+<script>
+    window.onload=function () {
+        // 添加宠物
+        $('.add_box').click(function () {
+            location.href='./add_pet.html'
+        })
+
+        // 发布
+        $('.issue_img').click(function(){
+            location.href='./issue.html'
+        })
+    }
+</script>
+</html>

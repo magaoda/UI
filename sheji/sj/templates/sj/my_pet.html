@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'sj/css/my_pet.css' %}">
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+    <title>我的宠物</title>
+</head>
+<body>
+    <!--头信息-->
+    <header class="head">
+        <header class="main_box">
+            <a href="{% url 'sj:mine'%}" id="settings"><img src="{% static 'sj/img/back11.png' %}" alt=""></a>
+            <span id="mine">我的宠物</span>
+            <a href="" id="messages"><img src="{% static 'sj/img/jia.png' %}" alt=""></a>
+        </header>
+    </header>
+    <!--主体信息-->
+    <main class="con">
+        <main class="primary">
+            <main class="primary_con">
+                <!--图片-->
+                <img src="{% static 'sj/img/dog10.png' %}" alt="" style="display:block;height: 6.00rem;width: 6.06rem;border-radius: 0.18rem;">
+                <!--信息1-->
+                <main class="info_one">
+                    <main class="info_name">
+                        <main class="img_boxs"></main>
+                        <span style="float: left">波比</span>
+                    </main>
+                    <main class="info_sex">
+                        <main class="img_boxs"></main>
+                        <span style="float: left">MM</span>
+                    </main>
+                    <main class="info_share"></main>
+                </main>
+                <!--信息2-->
+                <main class="info_two">
+                    <main class="info_kind"></main>
+                    <span style="float: left; ">阿拉斯加金毛犬</span>
+                </main>
+                <!--信息3-->
+                <main class="info_three">
+                    <main class="info_age">
+                        <main class="img_boxs"></main>
+                        <span style="float: left;font-weight: 600;">8</span>岁
+                    </main>
+                    <main class="info_weight">
+                        <main class="img_boxs"></main>
+                        <span style="float: left;font-weight: 600;">18</span>kg
+                    </main>
+                    <main class="info_triangle">
+
+                    </main>
+                </main>
+            </main>
+            <!--放大招-->
+            <main class="small_zhao">
+            </main>
+        </main>
+    </main>
+    <!--小圆点-->
+    <div class="box_con">
+        <div class="box_cons">
+            <div class="circle_box">
+                <div class="circle" style="background: white"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  {% load static %}
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/indexi.js' %}"></script>
+   <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+</head>
+<body>
+<div class="shouye">
+    <div class="qidong">
+        <img src="{% static 'sj/img/index.png' %}" alt="">
+    </div>
+
+
+    <div class="quesheng" style="display: none">
+        <div class="kongbai"></div>
+        <div class="box gonglve">
+            <img src="{% static 'sj/img/1.png' %}" alt="">
+            <span class="wenzi1">攻略</span>
+            <span class="wenzi2">快速成为萌宠达人</span>
+        </div>
+        <div class="box jiyang">
+            <img src="{% static 'sj/img/2.png' %}" alt="">
+            <span class="wenzi1">寄养</span>
+            <span class="wenzi2">萌宠安置更放心</span>
+        </div>
+        <div class="box shejiao">
+          <a href="{% url 'sj:xuanze' %}">
+             <img src="{% static 'sj/img/3.png' %}" alt="">
+            <span class="wenzi1">社交</span>
+            <span class="wenzi2">遛狗约伴不孤单</span>
+          </a>
+
+        </div>
+        <div class="kongbai"></div>
+        <div class="yuan">
+            <div class="circle hot"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background: white;
+    }
+    a{
+       text-decoration:none;
+      out-line: none
+    }
+    .shouye{
+        width: 7.5rem;
+        height: 13rem;
+    }
+    .qidong{
+        width: 7.5rem;
+        height: 13rem;
+        background: white;
+    }
+    .qidong img{
+        width: 100%;
+        height: 100%;
+    }
+    .quesheng{
+        width: 7.5rem;
+        height: 13.34rem;
+        position: relative;
+    }
+    .quesheng img{
+        display: block;
+        width: 80%;
+        margin:0 auto;
+    }
+    .quesheng .gonglve{
+        height:8.5rem;
+        background: white;
+        position: absolute;
+        left: 0;
+        top:2rem;
+        z-index: 10;
+    }
+    .quesheng .jiyang{
+        height:8.5rem;
+        background: white;
+        position: absolute;
+        left: 0;
+        top:2rem;
+        z-index: 5;
+    }
+    .quesheng .shejiao{
+        height:8.5rem;
+        background: white;
+        position: absolute;
+        left: 0;
+        top:2rem;
+        z-index: 5;
+    }
+    .quesheng .wenzi1{
+        display: block;
+        color:#FB3B5B;
+        font-size: 0.58rem;
+        text-align: center;
+        font-weight: 500;
+        margin-top: 0.3rem;
+    }
+    .quesheng .wenzi2{
+        display: block;
+        color:#FB3B5B;
+        font-size: 0.3rem;
+        text-align: center;
+        font-weight: 200;
+        margin-top: 0.3rem;
+    }
+    .kongbai{
+        width:100%;
+        height: 15%;
+    }
+    .yuan{
+        display: flex;
+        flex-direction: row;
+        width: 1.34rem;
+        z-index: 999;
+        position: absolute;
+        bottom: 1.8rem;
+        left:3rem;
+    }
+    .yuan .circle{
+        z-index: 999;
+        width: 0.1rem;
+        height: 0.1rem;
+        border-radius: 50%;
+        background: #E9E4E4;
+        margin-left: 0.17rem;
+        margin-right: 0.17rem;
+    }
+    .yuan .hot{
+        background: #FB3B5B;
+    }
+</style>

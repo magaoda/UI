@@ -1,0 +1,437 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+}
+body{
+	background-color: #fff;
+	font-size: 0.2rem;
+}
+
+
+
+.app {
+	width: 100%;
+	height: auto;
+}
+.app header{
+	width:100%;
+	height:0.8rem;
+	background:-webkit-linear-gradient(left,#FE4735,#FE3644,#FE2552)
+}
+.app header .con{
+	width:7.03rem;
+	height:100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.app header .con .icon_sousuo{
+	width:0.34rem;
+	height:0.37rem;
+}
+.app header .con .word{
+	font-size: 0.3rem;
+	color:#fff;
+	font-weight: bold;
+}
+.app header .con .icon_fabu{
+	width:0.4rem;
+	height:0.44rem;
+}
+main{
+	width:100%;
+	height:auto;
+}
+main .section1{
+	width:100%;
+	height:auto;
+	margin-top: 0.2rem;
+}
+main .section1 .con{
+	width:7.03rem;
+	height:100%;
+	margin: 0 auto;
+	border:1px solid #fff;
+	box-sizing: border-box;
+	border-radius: 0.2rem;
+	box-shadow: 0 0 0.15rem 0.05rem #FFEFF0;
+}
+main .section1 .con .loction{
+	width:6.52rem;
+	height:1.40rem;
+	margin:0 auto;
+}
+main .section1 .con .loction .left{
+	width:50%;
+	height:100%;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+main .section1 .con .loction .left .img_ji{
+	width:0.96rem;
+	height:0.96rem;
+}
+main .section1 .con .loction .left .location_name{
+	width:2rem;
+	height:0.5rem;
+}
+main .section1 .con .loction .left .location_name .top{
+	width:100%;
+	height:50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	top:0;
+	left:0;
+}
+main .section1 .con .loction .left .location_name .top .img_dingwei{
+	position: absolute;
+	top:0;
+	left:0.5rem;
+}
+main .section1 .con .loction .left .location_name .top span{
+	font-size: 0.2rem;
+	color:#7F7F7F;
+	font-weight: normal;
+}
+main .section1 .con .loction .left .location_name .bottom{
+	width:100%;
+	height:50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top:0;
+	left:0;
+}
+main .section1 .con .loction .left .location_name .bottom .img_gutou{
+	position: absolute;
+	top:0;
+	left:-0.1rem;
+}
+main .section1 .con .loction .left .location_name .bottom span{
+	font-size: 0.2rem;
+	font-weight: normal;
+	color:#7F7F7F;
+}
+main .section1 .con .loction .left .location_name .bottom span:first-child{
+	margin-top: 0.1rem;
+	margin-left: -0.2rem;
+}
+main .section1 .con .loction .left .location_name .bottom span:nth-child(2){
+	margin-top: 0.1rem;
+	margin-left: 0.1rem;
+	color:#FE6859;
+}
+
+main .section1 .con .loction .right{
+	width:50%;
+	height:100%;
+	float: left;
+	position: relative;
+	top:0;
+	left:0;
+}
+main .section1 .con .loction .right .img_lianxi{
+	margin-top: 0.4rem;
+	margin-left: 1.8rem;
+}
+main .section1 .con .loction .right .word{
+	position: absolute;
+	top:0.48rem;
+	left:2.6rem;
+	font-size: 0.2rem;
+	font-weight: normal;
+	color:#fff;
+}
+main .section1 .con p{
+	width:6.52rem;
+	height:0.84rem;
+	margin:0 auto;
+	font-size: 0.21rem;
+	color:#4C4C4C;
+	font-weight: normal;
+	line-height: 0.42rem;
+}
+main .section1 .con .img_box{
+	width:6.52rem;
+	height:3.03rem;
+	margin:0 auto;
+}
+main .section1 .con .pinglun{
+	width:6.52rem;
+	height:2.31rem;
+	margin:0 auto;
+}
+main .section1 .con .pinglun .zang{
+	width:100%;
+	height:1rem;
+}
+main .section1 .con .pinglun .zang .left{
+	width:50%;
+	height:100%;
+	float: left;
+}
+main .section1 .con .pinglun .zang .left div{
+	float: left;
+	margin-left: 0.12rem;
+	margin-top: 0.2rem;
+}
+main .section1 .con .pinglun .zang .left div:first-child{
+	margin-left: 0;
+}
+main .section1 .con .pinglun .zang .left div:last-child{
+	margin-top: 0.3rem;
+}
+main .section1 .con .pinglun .zang .right{
+	width:50%;
+	height:100%;
+	float: left;
+}
+main .section1 .con .pinglun .zang .right div{
+	margin-top: 0.15rem;
+	float: left;
+}
+main .section1 .con .pinglun .zang .right div:first-child{
+	margin-left: 0.76rem;
+}
+main .section1 .con .pinglun .con1{
+	width:100%;
+	height:0.62rem;
+	color:#666666;
+	font-size: 0.2rem;
+	font-weight: normal;
+}
+main .section1 .con .pinglun .con1 .pinglun_con:last-child div{
+	float: left;
+	margin-left: 0.2rem;
+}
+main .section1 .con .pinglun .con1 .pinglun_con:last-child div:first-child{
+	margin-left: 0;
+}
+main .section1 .con .pinglun .con1 .pinglun_con:last-child div:nth-child(2){
+	margin-left: 0;
+}
+main .section1 .con .pinglun .num{
+	width:100%;
+	height:0.69rem;
+}
+main .section1 .con .pinglun .num .look_pinglun{
+	margin-top: 0.2rem;
+	margin-left: 4.3rem;
+	color: #4C4C4C;
+	font-size: 0.2rem;
+	font-weight: normal;
+}
+main .section2{
+	height: 0.32rem;
+	width: 100%;
+}
+main .section3{
+	width:100%;
+	height:auto;
+}
+main .section3 .con{
+	width:7.03rem;
+	height:100%;
+	margin: 0 auto;
+	border:1px solid #fff;
+	box-sizing: border-box;
+	border-radius: 0.2rem;
+	box-shadow: 0 0 0.15rem 0.05rem #FFEFF0;
+}
+main .section3 .con .loction{
+	width:6.52rem;
+	height:1.40rem;
+	margin:0 auto;
+}
+main .section3 .con .loction .left{
+	width:50%;
+	height:100%;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+main .section3 .con .loction .left .img_ji{
+	width:0.96rem;
+	height:0.96rem;
+}
+main .section3 .con .loction .left .location_name{
+	width:2rem;
+	height:0.5rem;
+}
+main .section3 .con .loction .left .location_name .top{
+	width:100%;
+	height:50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	top:0;
+	left:0;
+}
+main .section3 .con .loction .left .location_name .top .img_dingwei{
+	position: absolute;
+	top:0;
+	left:0.5rem;
+}
+main .section3 .con .loction .left .location_name .top span{
+	font-size: 0.2rem;
+	color:#7F7F7F;
+	font-weight: normal;
+}
+main .section3 .con .loction .left .location_name .bottom{
+	width:100%;
+	height:50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top:0;
+	left:0;
+}
+main .section3 .con .loction .left .location_name .bottom .img_gutou{
+	position: absolute;
+	top:0;
+	left:-0.1rem;
+}
+main .section3 .con .loction .left .location_name .bottom span{
+	font-size: 0.2rem;
+	font-weight: normal;
+	color:#7F7F7F;
+}
+main .section3 .con .loction .left .location_name .bottom span:first-child{
+	margin-top: 0.1rem;
+	margin-left: -0.2rem;
+}
+main .section3 .con .loction .left .location_name .bottom span:nth-child(2){
+	margin-top: 0.1rem;
+	margin-left: 0.1rem;
+	color:#FE6859;
+}
+
+main .section3 .con .loction .right{
+	width:50%;
+	height:100%;
+	float: left;
+	position: relative;
+	top:0;
+	left:0;
+}
+main .section3 .con .loction .right .img_lianxi{
+	margin-top: 0.4rem;
+	margin-left: 1.8rem;
+}
+main .section3 .con .loction .right .word{
+	position: absolute;
+	top:0.48rem;
+	left:2.6rem;
+	font-size: 0.2rem;
+	font-weight: normal;
+	color:#fff;
+}
+main .section3 .con p{
+	width:6.52rem;
+	height:1.25rem;
+	margin:0 auto;
+	font-size: 0.21rem;
+	color:#4C4C4C;
+	font-weight: normal;
+	line-height: 0.41rem;
+}
+main .section3 .con p img{
+	display: inline;
+}
+main .section3 .con .img_box{
+	width:6.52rem;
+	height:3.16rem;
+	margin:0 auto;
+}
+main .section3 .con .img_box .img1{
+	width: 3.16rem;
+	height:3.16rem;
+	float: left;
+}
+main .section3 .con .img_box .img2{
+	width: 3.16rem;
+	height:3.16rem;
+	float: right;
+}
+main .section3 .con .pinglun{
+	width:6.52rem;
+	height:2.31rem;
+	margin:0 auto;
+}
+main .section3 .con .pinglun .zang{
+	width:100%;
+	height:1rem;
+}
+main .section3 .con .pinglun .zang .left{
+	width:50%;
+	height:100%;
+	float: left;
+}
+main .section3 .con .pinglun .zang .left div{
+	float: left;
+	margin-left: 0.12rem;
+	margin-top: 0.2rem;
+}
+main .section3 .con .pinglun .zang .left div:first-child{
+	margin-left: 0;
+}
+main .section3 .con .pinglun .zang .left div:last-child{
+	margin-top: 0.3rem;
+}
+main .section3 .con .pinglun .zang .right{
+	width:50%;
+	height:100%;
+	float: left;
+}
+main .section3 .con .pinglun .zang .right div{
+	margin-top: 0.15rem;
+	float: left;
+}
+main .section3 .con .pinglun .zang .right div:first-child{
+	margin-left: 0.76rem;
+}
+main .section3 .con .pinglun .con2{
+	width:100%;
+	height:0.62rem;
+	color:#666666;
+	font-size: 0.2rem;
+	font-weight: normal;
+}
+main .section3 .con .pinglun .con2 .pinglun_con:last-child div{
+	float: left;
+	margin-left: 0.2rem;
+}
+main .section3 .con .pinglun .con2 .pinglun_con:last-child div:first-child{
+	margin-left: 0;
+}
+main .section3 .con .pinglun .con2 .pinglun_con:last-child div:nth-child(2){
+	margin-left: 0;
+}
+main .section3 .con .pinglun .num{
+	width:100%;
+	height:0.69rem;
+}
+main .section3 .con .pinglun .num .look_pinglun{
+	margin-top: 0.2rem;
+	margin-left: 4.3rem;
+	color: #4C4C4C;
+	font-size: 0.2rem;
+	font-weight: normal;
+}
+

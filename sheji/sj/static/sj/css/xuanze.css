@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: #fff;
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+    -webkit-font-smoothing: antialiased;
+    font-family: 苹方;
+}
+.top{
+    width:100% ;
+    height: 0.88rem;
+    background-color: #fe413a;
+    position:fixed;
+    top: 0;
+    z-index: 300;
+}
+.top .center{
+    width: 4.5rem;
+    height: 0.88rem;
+    line-height: 0.95rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color: #ffffff;
+    margin:0 auto;
+}
+.content {
+    width: 100%;
+    height: 7.2rem;
+    margin-top: 2rem;
+}
+.content .img{
+    width: 3rem;
+    height: 2.8rem;
+    margin: 0 auto;
+    background-image: url("../img/LOGO1.2.png");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease 0ms;
+}
+.content .box{
+    width: 6.6rem;
+    height: 5rem;
+    margin: 0 auto;
+}
+.content .reg a{
+    display: block;
+    width: 2.3rem;
+    height: 0.62rem;
+    background-color: #fe294f;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 0.3rem;
+    line-height: 0.62rem;
+    text-align: center;
+    float: left;
+    margin-top: 1.72rem;
+    margin-left: 0.6rem;
+    box-shadow: darkgrey 1px 1px 10px 1px ;
+}
+.content .login a{
+    display: block;
+    width: 2.3rem;
+    height: 0.62rem;
+    background-color: #fe294f;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 0.3rem;
+    line-height: 0.62rem;
+    text-align: center;
+    float: left;
+    margin-top: 1.72rem;
+    margin-left: 1rem;
+    box-shadow: darkgrey 1px 1px 10px 1px ;
+}

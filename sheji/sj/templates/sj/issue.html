@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的发布</title>
+   {% load static %}
+    <link rel="stylesheet" href="{% static 'sj/css/issue.css' %}">
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+</head>
+<body>
+
+    <!--头部信息-->
+    <header class="head">
+        <!--上部返回按钮-->
+        <header class="head_top">
+            <header class="left">
+                <header class="imgbox">
+                  <a href="{% url 'sj:mine'%}"><img src="{% static 'sj/img/back - 副本.png' %}" alt="返回上一级" class="backimg"></a>
+
+                </header>
+            </header>
+        </header>
+        <!--中间头像-->
+        <header class="head_mid">
+            <header class="headmain">
+                <header class="mid_img_box">
+                    <!--<img src="{% static 'sj/img/touxiang.png' %}" alt="点击更换头像" class="touimg">-->
+                </header>
+            </header>
+        </header>
+        <!--宠物名称-->
+        <header class="head_mid_name">
+            <header class="name_box">
+                补丁麻麻
+            </header>
+        </header>
+        <!--宠物数量-->
+        <header class="head_bottom">
+            <header class="num_box">
+                <span class="nums">58 </span>条寄宠 <span class="nums">96 </span>条养宠
+            </header>
+        </header>
+    </header>
+    <!--寄宠/养宠-->
+    <div class="brind">
+        <div class="con">
+            <div class="main_box">
+                <!--寄养-->
+                <div class="bring_left">寄养</div>
+                <!--养宠-->
+                <div class="bring_right">养宠</div>
+            </div>
+        </div>
+    </div>
+    <!--js-->
+    <script>
+        $('.bring_left').click(function () {
+            $(this).css({'background': '-webkit-linear-gradient(left,#FE5949,#FE415E)'})
+            $('.bring_right').css({'background':'none'})
+        })
+        $('.bring_right').click(function () {
+            $(this).css({'background': '-webkit-linear-gradient(left,#FE5949,#FE415E)'})
+            $('.bring_left').css({'background':'none'})
+        })
+    </script>
+    <!--没有图片的-->
+    <main class="con" style="height: 3.33rem;">
+        <main class="con_box">
+            <main class="real_con">
+                <!--时间-->
+                <main class="time_box">
+                    <img src="{% static 'sj/img/time.png' %}" alt="" class="time_span">
+                    <span id="time_text">2018-10-23 23:48</span>
+                </main>
+                <!--文本-->
+                <main class="text_box">最近出差，家中有只三个月大的猫咪，需要被照顾，有空闲咪友可以帮忙带的，请与我联系~</main>
+                <!--赞-->
+                <main class="zan_box">
+                    <!--赞头像-->
+                    <main class="zan_left">
+                        <main class="img_box"><img src="{% static 'sj/img/zan1.png' %}" alt="" style="display: block;height: 100%;width: 100%"></main>
+                        <main class="img_box"><img src="{% static 'sj/img/zan2.png' %}" alt="" style="display: block;height: 100%;width: 100%"></main>
+                        <main class="img_box"><img src="{% static 'sj/img/zan3.png' %}" alt="" style="display: block;height: 100%;width: 100%"></main>
+                        <main class="wenzi" style="line-height: 0.50rem;font-size: 0.20rem">
+                            <span style="color: hotpink;font-size: 0.20rem">2468 </span> 个赞
+                        </main>
+                    </main>
+                    <!--评论和转发-->
+                    <main class="zan_right">
+                        <main class="zhuanfa">
+                            <main class="zhuanfa_img"></main>
+                            <span class="zhuanfa_num">68</span>
+                        </main>
+                        <main class="pinglun">
+                            <main class="pinglun_img"></main>
+                            <span class="pinglun_num">168</span>
+                        </main>
+                    </main>
+                </main>
+                <!--评论-->
+                <main class="discuss_box">
+                    <main class="discuss_one">
+                        <main class="discuss_name">包子</main>
+                        <span class="discuss_con">去哪里看呢？</span>
+                    </main>
+                    <main class="discuss_one">
+                        <main class="discuss_name">饺子</main>
+                        <main class="discuss_con">
+                            <img class="discuss_face" src="{% static 'sj/img/discuss_con.png' %}" style="display: block;height: 100%;width: 0.32rem;margin-right: 0.09rem">
+                            <img class="discuss_face" src="{% static 'sj/img/discuss_con.png' %}" style="display: block;height: 100%;width: 0.32rem;margin-right: 0.09rem">
+                            <img class="discuss_face" src="{% static 'sj/img/discuss_con.png' %}" style="display: block;height: 100%;width: 0.32rem;margin-right: 0.09rem">
+                        </main>
+                    </main>
+                </main>
+                <!--查看全部-->
+                <main class="see_all_box">
+                    <span class="all_discuss">查看全部289条评论</span>
+                </main>
+            </main>
+        </main>
+    </main>
+    <!--一张图片的-->
+    <main class="con" style="height: 6.52rem;">
+        <main class="con_box">
+            <main class="real_con">
+                <!--时间-->
+                <main class="time_box">
+                    <img src="{% static 'sj/img/time.png' %}" alt="" class="time_span">
+                    <span id="time_text">2018-10-23 23:48</span>
+                </main>
+                <!--文本-->
+                <main class="text_box">最近出差，家中有只三个月大的猫咪，需要被照顾，有空闲咪友可以帮忙带的，请与我联系~</main>
+                <!--图片-->
+                <main class="img_box_one">
+                    <img src="{% static 'sj/img/one - 副本.png' %}" alt="" style="display: block;height: 100%;width: 100%;border-radius: 0.09rem">
+                </main>
+                <!--赞-->
+                <main class="zan_box">
+                    <!--赞头像-->
+                    <main class="zan_left">
+                        <main class="img_box"><img src="{% static 'sj/img/zan1.png' %}" alt="" style="display: block;height: 100%;width: 100%"></main>
+                        <main class="img_box"><img src="{% static 'sj/img/zan2.png' %}" alt="" style="display: block;height: 100%;width: 100%"></main>
+                        <main class="img_box"><img src="{% static 'sj/img/zan3.png' %}" alt="" style="display: block;height: 100%;width: 100%"></main>
+                        <main class="wenzi" style="line-height: 0.50rem;font-size: 0.20rem">
+                            <span style="color: hotpink;font-size: 0.20rem">2468 </span> 个赞
+                        </main>
+                    </main>
+                    <!--评论和转发-->
+                    <main class="zan_right">
+                        <main class="zhuanfa">
+                            <main class="zhuanfa_img"></main>
+                            <span class="zhuanfa_num">68</span>
+                        </main>
+                        <main class="pinglun">
+                            <main class="pinglun_img"></main>
+                            <span class="pinglun_num">168</span>
+                        </main>
+                    </main>
+                </main>
+                <!--评论-->
+                <main class="discuss_box">
+                    <main class="discuss_one">
+                        <main class="discuss_name">包子</main>
+                        <span class="discuss_con">去哪里看呢？</span>
+                    </main>
+                    <main class="discuss_one">
+                        <main class="discuss_name">饺子</main>
+                        <main class="discuss_con">
+                            <img class="discuss_face" src="{% static 'sj/img/discuss_con.png' %}" style="display: block;height: 100%;width: 0.32rem;margin-right: 0.09rem">
+                            <img class="discuss_face" src="{% static 'sj/img/discuss_con.png' %}" style="display: block;height: 100%;width: 0.32rem;margin-right: 0.09rem">
+                            <img class="discuss_face" src="{% static 'sj/img/discuss_con.png' %}" style="display: block;height: 100%;width: 0.32rem;margin-right: 0.09rem">
+                        </main>
+                    </main>
+                </main>
+                <!--查看全部-->
+                <main class="see_all_box">
+                    <span class="all_discuss">查看全部289条评论</span>
+                </main>
+            </main>
+        </main>
+    </main>
+    <!--两张图片-->
+    <main class="con" style="height: 6.52rem;">
+        <main class="con_box">
+            <main class="real_con">
+                <!--时间-->
+                <main class="time_box">
+                    <img src="{% static 'sj/img/time.png' %}" alt="" class="time_span">
+                    <span id="time_text">2018-10-23 23:48</span>
+                </main>
+                <!--文本-->
+                <main class="text_box">最近出差，家中有只三个月大的猫咪，需要被照顾，有空闲咪友可以帮忙带的，请与我联系~</main>
+                <!--图片-->
+                <main class="img_box_one">
+                    <img src="{% static 'sj/img/two1.png' %}" alt="" style="display: block;height: 100%;width: 3.03rem;border-radius: 0.09rem">
+                    <img src="{% static 'sj/img/two2.png' %}" alt="" style="display: block;height: 100%;width: 3.03rem;border-radius: 0.09rem">
+                </main>
+                <!--赞-->
+                <main class="zan_box">
+                    <!--赞头像-->
+                    <main class="zan_left">
+                        <main class="img_box"><img src="{% static 'sj/img/zan1.png' %}" alt="" style="display: block;height: 100%;width: 100%"></main>
+                        <main class="img_box"><img src="{% static 'sj/img/zan2.png' %}" alt="" style="display: block;height: 100%;width: 100%"></main>
+                        <main class="img_box"><img src="{% static 'sj/img/zan3.png' %}" alt="" style="display: block;height: 100%;width: 100%"></main>
+                        <main class="wenzi" style="line-height: 0.50rem;font-size: 0.20rem">
+                            <span style="color: hotpink;font-size: 0.20rem">2468 </span> 个赞
+                        </main>
+                    </main>
+                    <!--评论和转发-->
+                    <main class="zan_right">
+                        <main class="zhuanfa">
+                            <main class="zhuanfa_img"></main>
+                            <span class="zhuanfa_num">68</span>
+                        </main>
+                        <main class="pinglun">
+                            <main class="pinglun_img"></main>
+                            <span class="pinglun_num">168</span>
+                        </main>
+                    </main>
+                </main>
+                <!--评论-->
+                <main class="discuss_box">
+                    <main class="discuss_one">
+                        <main class="discuss_name">包子</main>
+                        <span class="discuss_con">去哪里看呢？</span>
+                    </main>
+                    <main class="discuss_one">
+                        <main class="discuss_name">饺子</main>
+                        <main class="discuss_con">
+                            <img class="discuss_face" src="{% static 'sj/img/discuss_con.png' %}" style="display: block;height: 100%;width: 0.32rem;margin-right: 0.09rem">
+                            <img class="discuss_face" src="{% static 'sj/img/discuss_con.png' %}" style="display: block;height: 100%;width: 0.32rem;margin-right: 0.09rem">
+                            <img class="discuss_face" src="{% static 'sj/img/discuss_con.png' %}" style="display: block;height: 100%;width: 0.32rem;margin-right: 0.09rem">
+                        </main>
+                    </main>
+                </main>
+                <!--查看全部-->
+                <main class="see_all_box">
+                    <span class="all_discuss">查看全部289条评论</span>
+                </main>
+            </main>
+        </main>
+    </main>
+
+
+</body>
+</html>
+<script>
+    $('.imgbox').click(function () {
+        location.href='./mine.html'
+    })
+</script>

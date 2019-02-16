@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动态详情</title>
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'sj/css/dynamic_details.css' %}">
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <div class="con">
+                <div class="icon_sousuo">
+                  <a href="{% url 'sj:foster_care'%}"><img src="{% static 'sj/img/jiantou.png' %}" width="10" height="20" alt=""></a>
+
+                </div>
+                <div class="word">
+                    <span>动态详情</span>
+                </div>
+                <div class="icon_fabu">
+                    <img src="{% static 'sj/img/fenxaing.png' %}" width="25" height="23" alt="">
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="con">
+                <div class="location">
+                    <div class="loction">
+                        <div class="left">
+                            <div class="img_ji">
+                                <img src="{% static 'sj/img/jiyangzhuazi.png' %}" width="48" height="48" alt="">
+                            </div>
+                            <div class="location_name">
+                                <div class="top">
+                                    <span>布丁</span>
+                                    <span>山西</span>
+                                    <span>太原</span>
+                                    <div class="img_dingwei">
+                                        <img src="{% static 'sj/img/dingwei.png' %}" width="13" height="19" alt="">
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <span>安可</span>
+                                    <span>二哈</span>
+                                    <div class="img_gutou">
+                                        <img src="{% static 'sj/img/gutou.png' %}" width="26" height="23" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="img_lianxi">
+                                <img src="{% static 'sj/img/lianxi.png' %}" width="73" height="25" alt="">
+                            </div>
+                            <div class="word">
+                                <span>联系</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section class="section1">
+                <div class="con">
+                    <p>
+                        距离小长假还有两三天，去哪里浪呢？和狗狗一起去看日落可能是一个不错的选择，有朋友一起走吗？
+                    </p>
+                    <div class="img_box">
+                        <img src="{% static 'sj/img/shenqing.png' %}" width="327" height="151" alt="">
+                    </div>
+                    <div class="pinglun">
+                        <div class="zang">
+                            <div class="left">
+                                <div class="img_zang1">
+                                    <img src="{% static 'sj/img/zang1img.png' %}" width="28" height="28" alt="">
+                                </div>
+                                <div class="img_zang1">
+                                    <img src="{% static 'sj/img/zang2img.png' %}" width="28" height="28" alt="">
+                                </div>
+                                <div class="img_zang1">
+                                    <img src="{% static 'sj/img/zang3img.png' %}" width="28" height="28" alt="">
+                                </div>
+                                <div class="zangnum">
+                                    <span style="color:#FE9186;">2468</span>
+                                    个赞
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="img_icon">
+                                    <img src="{% static 'sj/img/zangicon.png' %}" width="41" height="38" alt="">
+                                </div>
+                                <div class="img_icon">
+                                    <img src="{% static 'sj/img/pinglunicon.png' %}" width="41" height="38" alt="">
+                                </div>
+                                <div class="img_icon">
+                                    <img src="{% static 'sj/img/zhuanfaicon.png' %}" width="41" height="38" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section2">
+
+            </section>
+            <section class="section3">
+                <div class="con">
+                    <div class="nav_pinglun">
+                        <span>|</span>
+                        <span>评论</span>
+                    </div>
+                    <div class="con_pinglun">
+                        <div class="left">
+                            <div class="left_one">
+                                <img src="{% static 'sj/img/rourou.png' %}" width="27" height="27" alt="">
+                            </div>
+                            <div class="left_two">
+                                <span>肉肉</span>
+                                <p>
+                                    水流几处又相逢，日落月初人倚月，单身贵族尔相随
+                                </p>
+                                <div class="button">
+                                    回复
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <span class="time">
+                                24分钟前
+                            </span>
+                        </div>
+                    </div>
+                    <div class="con_pinglun">
+                        <div class="left">
+                            <div class="left_one">
+                                <img src="{% static 'sj/img/bake.png' %}" width="27" height="27" alt="">
+                            </div>
+                            <div class="left_two">
+                                <span>巴克</span>
+                                <p>
+                                    <span>
+                                        <img src="{% static 'sj/img/buhuo.png' %}" alt="">
+                                    </span>
+                                </p>
+                                <div class="button">
+                                    回复
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <span class="time">
+                                36分钟前
+                            </span>
+                        </div>
+                    </div>
+                    <div class="con_pinglun">
+                        <div class="left">
+                            <div class="left_one">
+                                <img src="{% static 'sj/img/rourou.png' %}" width="27" height="27" alt="">
+                            </div>
+                            <div class="left_two">
+                                <span>天狼</span>
+                                <p>
+                                    最美不过夕阳，温馨又从容，夕阳是晚开的花，夕阳是陈年的酒。
+                                </p>
+                                <div class="button">
+                                    回复
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <span class="time">
+                                58分钟前
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section4">
+
+            </section>
+        </main>
+        <footer>
+            <div class="add">
+                <input type="text" placeholder="添加评论">
+            </div>
+            <div class="icon">
+                <img src="{% static 'sj/img/xiaolian.png' %}" width="20" height="20" alt="">
+            </div>
+            <div class="send">
+                发送
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

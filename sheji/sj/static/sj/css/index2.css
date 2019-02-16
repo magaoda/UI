@@ -1,0 +1,44 @@
+/*
+* @Author: 75497
+* @Date:   2018-07-09 09:22:30
+* @Last Modified by:   75497
+* @Last Modified time: 2018-07-10 22:56:00
+*/
+
+@import url('base.css');
+body,html{
+    background-color: #303038;
+}
+bottom{
+    height:11.26rem;
+}
+bottom .top{
+    margin-top: 6.21rem;
+    margin-left: 1.39rem;
+}
+bottom .top img{
+    width: 1.89rem;
+    height: 0.66rem;
+}
+bottom .main{
+    margin-top: 0.82rem;
+}
+bottom .main img{
+    width: 7.5rem;
+    height: 0.97rem;
+}
+bottom .main span{
+    color: #fff;
+    margin-top: 0.9rem;
+    margin-left: 3.0rem;
+    font-size: 0.29rem;
+}
+bottom .bottom{
+    height: 2.23rem;
+    padding: 0.65rem 0;
+    padding-left: 3.1rem;
+}
+bottom .bottom img{
+    width: 0.93rem;
+    height:0.93rem;
+}

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人动态详情</title>
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'sj/css/personal_dynamics.css' %}">
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+</head>
+<body>
+    <!--我的个人信息-->
+    <header class="head">
+        <header class="main_box">
+            <a href="{% url 'sj:mine'%}" id="back_box"><img src="{% static 'sj/img/back11.png' %}" alt="" class="back_con"></a>
+            <span id="mine"></span>
+            <header id="menu_box"><a href="{% url 'sj:personal_information'%}"></a></header>
+        </header>
+    </header>
+    <!--脖子部分-->
+    <div class="neck">
+        <div class="neck_con">
+            <div class="neck_box">
+                <img src="{% static 'sj/img/touxiang.png' %}" alt="" id="neck_img">
+            </div>
+        </div>
+    </div>
+    <!--肚子部分-->
+    <main class="tummy">
+        <main class="tummy_con">
+            <!--导航-->
+            <main class="weasand">
+                <!--反馈-->
+                <main class="weasand_box">
+                    <img src="{% static 'sj/img/feedback.png' %}" alt="" class="weasand_img">
+                    <span><span style="color: red">156</span>反馈</span>
+                </main>
+                <!--关注-->
+                <main class="weasand_box">
+                    <img src="{% static 'sj/img/attention.png' %}" alt="" class="weasand_img">
+                    <span><span style="color: red">386</span>关注</span>
+                </main>
+                <!--粉丝-->
+                <main class="weasand_box">
+                    <img src="{% static 'sj/img/fans - 副本.png' %}" alt="" class="weasand_img">
+                    <span><span style="color: red">962</span>粉丝</span>
+                </main>
+            </main>
+            <!--宠物-->
+            <main class="lung">
+                <main class="lung_top">
+                    <main class="lung_top1"></main><span style="float: left">宠物</span>
+                </main>
+                <main class="lung_mid">
+                    <main class="lung_mid1">
+                        <main class="lung_mid1_img">
+                          <a href="{% url 'sj:pet_details'%}"><img src="{% static 'sj/img/coriander.png' %}" alt="" class="imgs"></a>
+                        </main>
+                        <main class="lung_mid1_text">
+                            <main class="lung_mid1_text1">波仔</main>
+                            <main class="lung_mid1_text2">西伯利亚金毛犬</main>
+                        </main>
+                    </main>
+                    <main class="lung_mid1">
+                        <main class="lung_mid1_img">
+                            <img src="{% static 'sj/img/coriander.png' %}" alt="" class="imgs">
+                        </main>
+                        <main class="lung_mid1_text">
+                            <main class="lung_mid1_text1">波仔</main>
+                            <main class="lung_mid1_text2">西伯利亚金毛犬</main>
+                        </main>
+                    </main>
+                </main>
+                <main class="lung_bot">
+                    <main class="lung_bot_circle">
+                        <main class="circle_box" style="background: #c0c0c0;"></main>
+                        <main class="circle_box"></main>
+                        <main class="circle_box"></main>
+                    </main>
+                </main>
+            </main>
+            <!--动态-->
+            <main class="heart">
+                <main class="heart_box">
+                    <main class="ellipse ellipse1">主页</main>
+                    <main class="ellipse ellipse2">相册</main>
+                </main>
+                <main class="heart_box1">
+                    <main class="heart_box2"></main><span style="float: left">动态</span>
+                </main>
+            </main>
+            <!--今天-->
+            <main class="today">
+                <main class="add">
+                    <img src="{% static 'sj/img/add.png' %}" alt="" style="display: block;height: 0.34rem;width: 0.34rem;padding: 0.33rem">
+                </main>
+                <main class="add_box1">
+                    <main class="add_box2"></main><span style="float: left">今天</span>
+                </main>
+            </main>
+            <!--以往-->
+            <main class="pass">
+                <!--两张图-->
+                <main class="two_photo">
+                    <main class="time_box">
+                        <span style="color: red;font-size: 0.28rem;font-weight: 400;">19日</span>
+                        <span style="color: #0b0b0b;font-size: 0.22rem;font-weight: 400;">8月</span>
+                    </main>
+                    <main class="text_photo">
+                        <main class="two_photo_text">今天带着波仔去田野，波仔玩的真开心~</main>
+                        <main class="two_photo_photo">
+                            <main class="two_photo_box">
+                                <img src="{% static 'sj/img/two21.png' %}" alt="" style="display: block;height: 100%;width: 100%">
+                            </main>
+                            <main class="two_photo_box">
+                                <img src="{% static 'sj/img/two22.png' %}" alt="" style="display: block;height: 100%;width: 100%">
+                            </main>
+                        </main>
+                    </main>
+                </main>
+                <!--一张图-->
+                <main class="one_photo">
+                    <main class="time_box">
+                        <span style="color: red;font-size: 0.28rem;font-weight: 400;">19日</span>
+                        <span style="color: #0b0b0b;font-size: 0.22rem;font-weight: 400;">8月</span>
+                    </main>
+                    <main class="text_photo">
+                        <main class="one_photo_text">今天头疼发热带在家，还好有我们家波仔一直陪着我~~</main>
+                        <main class="two_photo_photo">
+                            <main class="one_photo_box">
+                                <img src="{% static 'sj/img/two21.png' %}" alt="" style="display: block;height: 100%;width: 100%">
+                                <main class="player">
+                                    <img src="{% static 'sj/img/player.png' %}" alt="" style="display: block;height: 100%;width: 100%">
+                                </main>
+                            </main>
+                        </main>
+                    </main>
+                </main>
+            </main>
+        </main>
+    </main>
+    <!--脚板-->
+    <footer class="foot">
+        <footer class="foot_box">
+            <footer class="foot_con">
+                <footer class="foot_left">
+                    <img src="{% static 'sj/img/foot.png' %}" alt="" style="display: block;height: 100%;width: 100%">
+                </footer>
+                <footer class="foot_right">联系</footer>
+            </footer>
+        </footer>
+    </footer>
+</body>
+</html>

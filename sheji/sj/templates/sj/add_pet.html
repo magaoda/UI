@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加宠物</title>
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'sj/css/add_pet.css' %}">
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+    <script src="{% static 'sj/js/selectDate.js' %}"></script>
+    <script src="{% static 'sj/js/mobileSelect.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'sj/css/mobileSelect.css' %}">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_966194_pwg9gbmuyk.css">
+</head>
+<body>
+    <!-- 头部信息 -->
+    <header class="head">
+        <header class="main_box">
+            <header id="arrows">
+              <a href="{% url 'sj:mine'%}"><img src="{% static 'sj/img/arrows.png' %}" alt=""></a>
+
+            </header>
+            <header id="add_pet">
+                添加宠物
+            </header>
+        </header>
+    </header>
+    <!--头像信息-->
+    <div class="photo">
+        <div class="main">
+            <img src="{% static 'sj/img/dog.png' %}" alt="" id="touxiangs">
+            <div class="camera">
+
+            </div>
+            <div class="shangchuan" style="display: none">
+                <input accept="image/*" type="file" id="imgs" autofocus>
+            </div>
+        </div>
+        <script>
+            $('#touxiangs').click(function () {
+                $('#imgs').click()
+            })
+        </script>
+
+    </div>
+    <!--详细信息-->
+    <main class="primary">
+        <main class="primary_box">
+            <!--宠物名字-->
+            <main class="primary_details" id="pet_name">
+                <main class="primary_name_left">
+                    <main class="name_icon">
+                        <img src="{% static 'sj/img/name.png' %}" alt="">
+                    </main>
+                    <main class="name_words">宠物名称</main>
+                </main>
+                <main class="primary_name_right" id="add_pet_name">
+                    <input type="text" placeholder="设置宠物名称" id="pet_name_input" style="display:block;border: none;height: 0.24rem;min-width:1.44rem;outline:none;">
+                    <span style="display: none;text-align: right;color: red;" id="texts"></span>
+                </main>
+            </main>
+            <script>
+                //名字处理
+                $('#pet_name_input').blur(function () {
+                    if($(this).val()){
+                        $('#texts').html($('#pet_name_input').val())
+                        $('#texts').css({'display':'block'})
+                        $('#pet_name_input').css({'display':'none'})
+                    }
+                })
+                $('#add_pet_name').click(function () {
+                    $('#pet_name_input').css({'display':'block'})
+                    $('#pet_name_input').focus()
+                    $('#texts').css({'display':'none'})
+                })
+            </script>
+            <!--宠物性别-->
+            <main class="primary_details" id="pet_sex">
+                <main class="primary_sex_left">
+                    <main class="sex_icon">
+                        <img src="{% static 'sj/img/sex.png' %}" alt="">
+                    </main>
+                    <main class="sex_words">宠物性别</main>
+                </main>
+                <main class="primary_sex_right">
+                    <main class="pet_sex_MM" style="width: 0.81rem">
+                        <main class="pet_sex_box">
+                            <img src="{% static 'sj/img/sex1.png' %}" alt="">
+                        </main>
+                        <span>MM</span>
+                    </main>
+                    <main class="pet_sex_GG">
+                        <main class="pet_sex_box" style="background: #AAE3E0">
+                            <img src="{% static 'sj/img/sex1.png' %}" alt="">
+                        </main>
+                        <span>GG</span>
+                    </main>
+                </main>
+            </main>
+            <!--宠物品种-->
+            <main class="primary_details" id="pet_breed">
+                <main class="primary_breed_left">
+                    <main class="breed_icon">
+                        <img src="{% static 'sj/img/breed.png' %}" alt="">
+                    </main>
+                    <main class="breed_words">宠物品种</main>
+                </main>
+                <main class="primary_breed_right">
+                  <a href="{% url 'sj:Pet_species'%}" style="color:#B2B2B2;">
+                    <span style="float: left">选择宠物品种</span>
+                    <img src="{% static 'sj/img/back.png' %}" alt="" style="float: right;margin-left: 0.18rem" >
+                  </a>
+
+                </main>
+            </main>
+            <!--宠物生日-->
+            <main class="primary_details" id="pet_birth">
+                <main class="primary_birth_left">
+                    <main class="birth_icon">
+                        <img src="{% static 'sj/img/birth.png' %}" alt="">
+                    </main>
+                    <main class="birth_words">宠物生日</main>
+                </main>
+                <main class="primary_birth_right" id="primary_birth_right">
+                    <span>选择宠物生日</span>
+                    <img src="{% static 'sj/img/back.png' %}" alt="">
+                </main>
+                <script>
+                    $.selectDate("#primary_birth_right",{
+                        start:1994,
+                        end:2019,
+                        select:[2019,1,1],
+                        title:'选择宠物生日'
+                    },function (data) {
+                        //year——年份    month——月份 day——日期
+                        var data=data
+                        console.log(data.year);
+                    })
+                </script>
+            </main>
+            <!--宠物体重-->
+            <main class="primary_details" id="pet_weight">
+                <main class="primary_weight_left">
+                    <main class="weight_icon">
+                        <img src="{% static 'sj/img/weight.png' %}" alt="">
+                    </main>
+                    <main class="weight_words">宠物体重</main>
+                </main>
+                <main class="primary_weight_right" id="add_pet_weight">
+                    <input type="text" placeholder="设置宠物体重" id="pet_weight_input" style="display:block;border: none;height: 0.24rem;min-width:60%;outline:none ">
+                    <span style="display: none;text-align: right" id="textweight"></span>
+                </main>
+                <script>
+                    $('#pet_weight_input').blur(function () {
+                        if($(this).val()){
+                            if (parseFloat($(this).val())){
+                                $('#textweight').html($('#pet_weight_input').val())
+                                $('#textweight').css({'display':'block'})
+                                $('#pet_weight_input').css({'display':'none'})
+                            }else{
+                                alert('请输入整数或者小数')
+                            }
+                        }
+                    })
+                    $('#add_pet_weight').click(function () {
+                        $('#pet_weight_input').css({'display':'block'})
+                        $('#pet_weight_input').focus()
+                        $('#textweight').css({'display':'none'})
+                    })
+                </script>
+            </main>
+            <!--是否添加为寄养宠物-->
+            <main class="primary_details" id="pet_consign">
+                <main class="primary_consign_left">
+                    <main class="consign_icon">
+                        <img src="{% static 'sj/img/consign.png' %}" alt="">
+                    </main>
+                    <main class="consign_words">是否添加为寄养宠物</main>
+                </main>
+                <main class="primary_consign_right">
+                    <main class="consign_left" id="add_pet_consign_yes">
+                        <main class="yes"></main>
+                        <span>是</span>
+                    </main>
+                    <main class="consign_right" id="add_pet_consign_no">
+                        <main class="no"></main>
+                        <span>否</span>
+                    </main>
+                </main>
+                <script>
+                    //宠物寄养
+                    var consign=0
+                    $('#add_pet_consign_yes').click(function () {
+                        $('.yes').css({'border-color':'white','background':'red'})
+                        $('.no').css({'border-color':'red','background':'white'})
+                        consign=1
+                    })
+                    $('#add_pet_consign_no').click(function () {
+                        $('.no').css({'border-color':'white','background':'red'})
+                        $('.yes').css({'border-color':'red','background':'white'})
+                        consign=0
+                    })
+                </script>
+            </main>
+        </main>
+    </main>
+    <!--保存-->
+    <footer class="save">
+        <footer class="save_box">
+            <span style="padding-right: 0.10rem">保</span>
+            <span style="padding-left: 0.10rem">存</span>
+        </footer>
+        <script>
+            $('.save_box').click(function () {
+                var obj={}
+                obj.sex=sex
+
+            })
+        </script>
+    </footer>
+</body>
+<script>
+    window.onload=function () {
+        //返回
+        $('#arrows').click(function () {
+            location.href='./mine.html'
+        })
+        //选择宠物种类
+        $('.primary_breed_right').click(function () {
+            location.href='./Pet_species.html'
+        })
+        //性别处理
+        var sex=0
+        $(".pet_sex_MM").click(function () {
+            sex=0
+            $(".pet_sex_MM .pet_sex_box").css({'background':'#AAE3E0'})
+
+            $(".pet_sex_GG .pet_sex_box").css({'background':'#ccc'})
+
+        })
+        $(".pet_sex_GG").click(function () {
+            sex=1
+            $(".pet_sex_GG .pet_sex_box").css({'background':'#AAE3E0'})
+            $(".pet_sex_MM .pet_sex_box").css({'background':'#ccc'})
+        })
+    }
+</script>
+</html>

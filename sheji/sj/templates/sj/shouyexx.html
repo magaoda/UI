@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页消息</title>
+  {% load static %}
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+    <script src="{% static 'sj/js/shouyexx.js' %}"></script>
+</head>
+<body>
+<div class="shouyexx">
+    <div class="header">
+      <div class="sy">首页</div>
+
+    </div>
+    <div class="search">
+        <div class="input">
+             <input type="text" class="aaa" placeholder="请输入要搜索的内容">
+        </div>
+        <div class="ssi">
+            <img src="{% static 'sj/img/搜索icon.png' %}" alt="">
+        </div>
+    </div>
+
+    <div class="lunbo">
+        <div class="box huati">
+            <img src="{% static 'sj/img/话题.png' %}" alt="">
+            <div class="cansai">
+                <img src="{% static 'sj/img/点击参赛按钮.png' %}" alt="">
+            </div>
+        </div>
+
+
+        <div class="box banner">
+            <img src="{% static 'sj/img/banner2.png' %}" alt="">
+        </div>
+
+        <div class="box banner1">
+            <img src="{% static 'sj/img/banner2.png' %}" alt="">
+        </div>
+
+        <div class="yuan">
+            <div class="circle hot"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+    <div class="nav">
+        <img src="{% static 'sj/img/攻略.png' %}" alt="">
+        <img src="{% static 'sj/img/文章.png' %}" alt="">
+        <img src="{% static 'sj/img/推荐.png' %}" alt="">
+    </div>
+    <div class="con">
+        <img src="{% static 'sj/img/椭圆13.png' %}" alt="">
+        <div class="lianxi">
+            <img src="{% static 'sj/img/联系2.png' %}" alt="">
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <div class="aa">
+      <a href="{% url 'sj:shouye'%}"><img src="{% static 'sj/img/首页.png' %}" alt=""></a>
+
+    </div>
+    <div class="aa">
+      <a href=""><img src="{% static 'sj/img/形状1拷贝.png' %}" alt=""></a>
+
+    </div>
+    <div class="aa">
+      <a href=""><img src="{% static 'sj/img/椭圆3拷贝2.png' %}" alt=""></a>
+
+    </div>
+    <!--<img src="../static/img/首页.png" alt="">-->
+    <!--<img src="../static/img/形状1拷贝.png" alt="">-->
+    <!--<img src="../static/img/椭圆3拷贝2.png" alt="">-->
+</div>
+<div class="kongbai"></div>
+</body>
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+       text-decoration:none;
+      out-line: none
+    }
+    .header img{
+        width: 100%;
+    }
+    .sy{
+      color: #FD81A4;
+      font-size: 0.32rem;
+      text-align: center;
+      line-height: 0.86rem;
+      z-index: 10;
+    }
+    .search img{
+        width: 100%;
+    }
+    .input{
+        position: relative;
+        height: 0.5rem;
+      margin-top: 0.1rem;
+    }
+    .aaa{
+        width: 93%;
+        height: 0.5rem;
+        position: absolute;
+        bottom: 0.05rem;
+        left:0.2rem;
+        border-radius: 0.5rem;
+        outline:none;
+        text-indent: 0.2rem;
+        overflow: hidden;
+    }
+    .ssi{
+        position: absolute;
+        right:0.5rem;
+        top:0.28rem;
+        width: 5%;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1.5rem;
+        position: absolute;
+        top:6rem;
+        left:0.1rem;
+    }
+    .nav img{
+        display: block;
+        width: 33%;
+        height: 2.5rem;
+    }
+    .lunbo{
+        position: relative;
+        margin-bottom: 0.7rem;
+        margin-top: 0.6rem;
+    }
+    .lunbo img{
+        width: 100%;
+    }
+    .box{
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    .huati{
+        z-index: 10;
+    }
+    .banner{
+        z-index: 5;
+    }
+    .banner1{
+        z-index: 5;
+    }
+    .yuan{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top:2.6rem;
+        right:2rem;
+        z-index: 999;
+    }
+    .circle{
+        width: 0.2rem;
+        height: 0.2rem;
+        border-radius: 50%;
+        background: #FD8D7A;
+        margin-left: 0.16rem;
+        margin-right: 0.16rem;
+    }
+    .hot{
+        background: #FE4735;
+    }
+    .cansai img{
+        width:1.8rem ;
+        height: 0.3rem;
+        display: block;
+        position: absolute;
+        top:2.2rem;
+        right:1.4rem;
+    }
+    .bottom{
+        width: 100%;
+        position: fixed;
+        bottom: 0.2rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .bottom .aa img{
+        display: block;
+        width: 30%;
+        height: 1rem;
+        margin-left: 0.9rem;
+        margin-right: 0.6rem;
+    }
+    .bottom{
+        background: white;
+    }
+    .bottom .aa :nth-child(2) img{
+        margin-bottom: 1.2rem;
+        height: 3rem;
+    }
+    .kongbai{
+        width: 100%;
+        height: 0.2rem;
+        position: fixed;
+        bottom: 0rem;
+      background-color: #fff;
+    }
+    .con{
+        width: 100%;
+        position: absolute;
+        top:9.5rem;
+    }
+    .con img{
+        width: 100%;
+        position: relative;
+    }
+    .con .lianxi img{
+        width:20%;
+        display: block;
+        position: absolute;
+        top:0.1rem;
+        right:0.2rem;
+    }
+</style>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人信息</title>
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'sj/css/personal_information.css' %}">
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+</head>
+<body>
+    <!--我的个人信息-->
+    <header class="head">
+        <header class="main_box">
+            <a href="{% url 'sj:personal_dynamics'%}" id="back_box"><img src="{% static 'sj/img/back11.png' %}" alt="" class="back_con"></a>
+            <span id="mine">个人信息</span>
+            <a href="" id="menu_box">
+                <header class="hengxian_box" style="background: white;height: 0.04rem;width: 0.40rem;border-radius: 0.02rem"></header>
+                <header class="hengxian_box" style="background: white;height: 0.04rem;width: 0.40rem;border-radius: 0.02rem"></header>
+                <header class="hengxian_box" style="background: white;height: 0.04rem;width: 0.20rem;border-radius: 0.02rem"></header>
+            </a>
+        </header>
+    </header>
+    <!--头像信息部分-->
+    <div class="photo">
+        <div class="photo_box">
+            <!--1-->
+            <div class="photo_con">
+                <div class="photo_con_left"></div>
+                <div class="photo_con_mid"></div>
+                <dic class="photo_con_right"></dic>
+            </div>
+            <!--2-->
+            <div class="name_box">
+                <span style="color: white;font-size: 0.30rem;font-weight: 400;padding-right: 0.08rem">补丁麻麻 </span>
+                <img src="{% static 'sj/img/name1.png' %}" alt="" style="height: 0.44rem">
+            </div>
+            <!--修饰-->
+            <div class="embelish"></div>
+        </div>
+    </div>
+    <!---->
+    <main class="main_con">
+        <main class="main_con_box">
+            <!--账号-->
+            <main class="main_boxs_1">
+                <main class="main_left">
+                    <main class="img_left_box"></main>
+                    <span style="padding-left: 0.09rem">账号</span>
+                </main>
+                <main class="main_right">358852437</main>
+            </main>
+            <!--地址-->
+            <main class="main_boxs_1">
+                <main class="main_left">
+                    <main class="img_left_box1" style="background: url('../static/img/personal_information/address.png');background-size: 100% 100%"></main>
+                    <span style="padding-left: 0.09rem">地址</span>
+                </main>
+                <main class="main_right">山西 &nbsp太原</main>
+            </main>
+            <!--签名-->
+            <main class="main_boxs_1">
+                <main class="main_left">
+                    <main class="img_left_box2" style="background: url('../static/img/personal_information/signature.png');background-size: 100% 100%"></main>
+                    <span style="padding-left: 0.09rem">签名</span>
+                </main>
+                <main class="main_right">虽然言语不同，但我们已心有灵犀。</main>
+            </main>
+            <!--好友视频-->
+            <main class="main_boxs_1">
+                <main class="main_left">
+                    <main class="img_left_box3" style="background: url('../static/img/personal_information/video.png');background-size: 120% 120%"></main>
+                    <span style="padding-left: 0.09rem"><span style="color: #ccc">好友</span><span style="color: red">视频</span></span>
+                </main>
+                <main class="main_right" style="height:0.22rem;min-width:0.12rem;background: url('../static/img/personal_information/back1.png') no-repeat;background-size: 100% 100%"></main>
+            </main>
+            <!--视频内容-->
+            <main class="video_box">
+                <main class="video_box_con video_box_con2 video_box_con4"></main>
+                <main class="video_box_con1 video_box_con5">
+                    <!--遮罩-->
+                    <main class="mid_shade"></main>
+                    <!--按钮-->
+                    <main class="mid_button"></main>
+                </main>
+                <main class="video_box_con video_box_con2 video_box_con3"></main>
+            </main>
+            <!--精选照片-->
+            <main class="selection">
+                <main class="selection_text">
+                    <main class="selection_text_left">
+                        <main class="selecttion_left_img"></main>
+                        <span style="font-size: 0.24rem"><span style="color: #c0c0c0">精选</span><span style="color: red;">照片</span></span>
+                    </main>
+                    <main class="selection_text_right"></main>
+                </main>
+                <main class="selection_img_box">
+                    <!--变背景图-->
+                    <main class="selection_img1">
+                        <img src="{% static 'sj/img/img2.png' %}" alt="" id="selection_img1">
+                    </main>
+                    <main class="selection_img2">
+                        <img src="{% static 'sj/img/img1.png' %}" alt="" id="selection_img2">
+                        <img src="{% static 'sj/img/img3.png' %}" alt="" id="selection_img2">
+                    </main>
+                </main>
+            </main>
+        </main>
+    </main>
+</body>
+</html>

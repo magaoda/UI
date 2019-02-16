@@ -1,0 +1,172 @@
+/*
+* @Author: 75497
+* @Date:   2018-07-09 09:22:30
+* @Last Modified by:   75497
+* @Last Modified time: 2018-07-10 22:56:00
+*/
+
+@import url('base.css');
+header {
+    width: 100%;
+    height: 1.76rem;
+    /* 谷歌内核 -webkit- */
+    /* 火狐内核  -moz- */
+    /* ie内核 -ms- */
+    /* 欧鹏内核 -o- */
+    background: no-repeat bottom/contain, -webkit-linear-gradient(left, #fe4735, #fe2651);
+}
+header .top{
+    height:0.68rem;
+    padding-left:0.24rem;
+    padding-right:0.24rem;
+    display: flex;
+    justify-content: space-between;
+}
+header .top #fanhui{
+    width: 0.21rem;
+    height:0.37rem;
+}
+header .top span{
+    font-size: 0.35rem;
+    color: #fff;
+}
+header .top #photo{
+    width: 0.45rem;
+    height:0.33rem;
+}
+header .bottom{
+    height: 1.08rem;
+    width: 100%;
+}
+header .bottom .search{
+    margin-top: 0.26rem;
+    margin-left: 0.24rem;
+    height: 0.56rem;
+    width: 6.79rem;
+    background: #fff;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search span{
+    margin-left: 0.24rem;
+    font-size: 0.27rem;
+    color: #fea39a;
+}
+.search img{
+    width: 0.27rem;
+    height: 0.27rem;
+    margin-right: 0.24rem;
+}
+main{
+    height: 8.83rem;
+    width: 100%;
+}
+first{
+    height: 3.44rem;
+    margin:0 0.53rem;
+    width: 100%;
+}
+first .title{
+    height: 0.40rem;
+    width: 100%;
+}
+first .title img{
+    width: 0.35rem;
+    height:0.35rem;
+}
+first .title #zi1{
+    font-size: 0.3rem;
+    color: #fe4735;
+    line-height: 0.4rem;
+}
+first .title #zi2{
+    font-size: 0.3rem;
+    color: #263030;
+    line-height: 0.4rem;
+}
+first .con{
+    height:0.85rem;
+    width: 7.5rem;
+    margin: 0.35rem 0 0.5rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+first .con span{
+    margin-left: 0.51rem;
+    font-size: 0.28rem;
+    display: flex;
+    flex-shrink: 0;
+}
+#zi3,#zi5,#zi7{
+    color: #4c4c4c;
+}
+#zi4,#zi6{
+    color: #fe2552;
+}
+first .xia{
+    display: flex;
+    justify-content: center;
+}
+first .xia img{
+    width: 0.26rem;
+    height: 0.26rem;
+}
+first .xia span{
+    margin-left: 0.08rem;
+    font-size: 0.23rem;
+    color: #7f7f7f;
+}
+second .title{
+    height: 0.40rem;
+    width: 100%;
+}
+second .title img{
+    width: 0.35rem;
+    height:0.35rem;
+}
+second .title #zi11{
+    font-size: 0.3rem;
+    color: #fe4735;
+    line-height: 0.4rem;
+}
+second .title #zi21{
+    font-size: 0.3rem;
+    color: #263030;
+    line-height: 0.4rem;
+}
+second .con{
+    padding: 0.37rem 0.5rem;
+    height:2.22rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+second .con .box{
+    display: inline;
+    border: 2px solid #ffd1d9;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background: #ffe9ed;
+    line-height: 0.5rem;
+    padding: 0 0.2rem;
+    font-size: 0.23rem;
+    color: #fe2552;
+    font-weight: bold;
+}
+second .con .box1{
+    color:#fe5f80;
+}
+bottom .bottom{
+    height: 2.23rem;
+    padding: 0.65rem 0;
+    padding-left: 3.1rem;
+}
+bottom .bottom img{
+    width: 0.93rem;
+    height:0.93rem;
+}
+

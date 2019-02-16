@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'sj/css/reg.css' %}">
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+    <script src="{% static 'sj/js/jquery.validate.min.js' %}"></script>
+    <title>注册</title>
+</head>
+<body>
+    <div class="all"></div>
+  <div class="top">
+    <div class="left"><a href="{% url 'sj:xuanze'%}"></a></div>
+    <div class="center"><span>注册</span></div>
+  </div>
+  <div class="img">
+      <a href=""></a>
+    </div>
+    <form action="/reg/" method="post" id="checkForm">
+      {% csrf_token %}
+        <div class="content">
+            <div class="box">
+                <div class="sj">
+                    <a href=""></a>
+                    <input type="text" class="input" placeholder="请输入您的手机号" name="phonetell">
+                    </div>
+                    <div class="mm">
+                        <a href=""></a>
+                        <input type="password" id="mm" class="input" placeholder="请输入您的密码" name="password">
+                    </div>
+                    <div class="mms">
+                        <a href=""></a>
+                        <input type="password" id="mms" class="input" placeholder="请确认您的密码" name="password2">
+
+                    </div>
+                    <div class="yzhq">
+                        <div class="yz">
+                            <a href="" class="yzm"></a>
+                            <input type="password" placeholder="请输入验证码">
+                        </div>
+                        <div class="hq"><a href="">获取验证码</a></div>
+                    </div>
+                <button id="btn" type="submit">登录</button>
+            </div>
+        </div>
+    </form>
+  <div class="san">
+      <div class="pingTai">
+        <div class="line">
+            <div class="line1"></div>
+            <span>第三方登录平台</span>
+            <div class="line2"></div>
+        </div>
+      </div>
+    <div class="qww">
+      <div class="qq"><a href="javascript:;" id="qq"></a></div>
+      <div class="wx"><a href="javascript:;"></a></div>
+      <div class="wb"><a href="javascript:;"></a></div>
+    </div>
+  </div>
+  <div class="yunxu">
+      <div class="tu1"><a href="javascript:;"></a></div>
+      <div class="zi">
+          <div class="xian1"></div>
+          <span>是否允许访问您的微信</span>
+          <div class="xian2"></div>
+      </div>
+      <div class="xuan">
+          <div class="qx"><a href="" >取消</a></div>
+          <div class="yx"><a href="" >允许</a></div>
+          <div class="shu"></div>
+      </div>
+  </div>
+</body>
+</html>
+<script>
+    $(".wx").click(function(){
+        $(".all").css({
+            display:"block",
+        })
+        $(".img a").css({
+            position: "fixed",
+            left: "2.9rem",
+            zIndex: 11,
+        })
+        $(".img span").css({
+            position: "fixed",
+            left: "2.4rem",
+            top:"3rem",
+        })
+        $(".yunxu").css({
+            display:"block",
+            zIndex: 20,
+        })
+    })
+    $("#checkForm").validate({
+                rules:{
+                    phonetell:{
+                        required:true,//不能为空
+                        minlength:11,//长度必须大于等于5
+                        maxlength:11,//最大长度是10
+                    },
+                    password:{
+                        required:true,
+                        digits:true,
+                        minlength:6,
+                    },
+                    password2:{
+                        required:true,
+                        digits:true,
+                        equalTo:"[name='password']"
+                    }
+                },
+                messages:{
+                    phonetell:{
+                        required:"电话号码不能为空",
+                        minlength:"电话号码不得少于11个字符",
+                        maxlength:"电话号码最多11个字符"
+                    },
+                    password:{
+                        required:"密码不能为空",
+                        digits:"密码必须是整数",
+                        minlength:"密码不得少于6位"
+                    },
+                    password2:{
+                        required:"确认密码不能为空",
+                        equalTo:"两次输入密码不一致"
+                    }
+                }
+            })
+</script>

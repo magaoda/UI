@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    width: 100%;
+}
+/* 头部信息 */
+header.head{
+    height: 0.88rem;
+    width: 100%;
+    background: #FE4437;
+    padding: 0 0.25rem;
+    box-sizing: border-box;
+}
+header.head .main_box{
+    height: 100%;
+    width: 7.02rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*返回箭头*/
+header.head #arrows{
+    width: 0.24rem;
+    height: 100%;
+}
+header.head #arrows img{
+    display: block;
+    margin-top: 0.24rem;
+    height: 0.40rem;
+    width: 0.22rem;
+}
+/*添加宠物*/
+header.head #add_pet{
+    line-height: 0.88rem;
+    width: 6.54rem;
+    height: 100%;
+    font-size: 0.36rem;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+/*头像*/
+div.photo{
+    height: 2.70rem;
+    width: 100%;
+    position: relative;
+}
+div.photo .main{
+    height: 1.50rem;
+    width: 1.50rem;
+    position: absolute;
+    top: 0;bottom: 0;
+    left: 0;right: 0;
+    margin: auto;
+    border-radius: 50%;
+    background: #FFECEB;
+}
+div.photo .main img{
+    display: block;
+    height: 60%;
+    position: absolute;
+    top: 0;bottom: 0;
+    left: 0;right: 0;
+    margin: auto;
+}
+div.photo .main .camera{
+    height: 0.25rem;
+    width: 0.32rem;
+    position: absolute;
+    bottom: 0;
+    right: 0.22rem;
+    background: url("../img/add_pet/camera.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/*主要内容*/
+main.primary{
+    height: 6.24rem;
+    width: 100%;
+}
+main.primary .primary_box{
+    height: 100%;
+    width: 7.02rem;
+    margin: 0 auto;
+    padding: 0.80rem 0.24rem;
+    border: 1px solid #ccc;
+    border-radius: 0.10rem;
+    box-sizing: border-box;
+    box-shadow: 0.03rem 0.03rem 0.02rem  papayawhip,-0.03rem -0.03rem 0.02rem  papayawhip;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+main.primary .primary_box .primary_details{
+    height: 0.24rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*宠物名字*/
+#pet_name .primary_name_left{
+    min-width: 1.22rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#pet_name .primary_name_left .name_icon{
+    height: 100%;
+    width: 0.24rem;
+    overflow: hidden;
+    position: relative;
+}
+#pet_name .primary_name_left .name_icon img{
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: -30%;
+    left: -40%;
+}
+#pet_name .primary_name_left .name_words{
+    width: 0.94rem;
+    height: 100%;
+    font-size: 0.22rem;
+    line-height: 0.22rem;
+    white-space: nowrap;
+}
+#pet_name .primary_name_right{
+    min-width: 1.44rem;
+    height: 100%;
+    font-size: 0.22rem;
+    line-height: 0.22rem;
+    color: #B2B2B2;
+}
+
+
+
+/*宠物性别*/
+#pet_sex .primary_sex_left{
+    min-width: 1.22rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#pet_sex .primary_sex_left .sex_icon{
+    height: 100%;
+    width: 0.24rem;
+    overflow: hidden;
+    position: relative;
+}
+#pet_sex .primary_sex_left .sex_icon img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#pet_sex .primary_sex_left .sex_words{
+    width: 0.94rem;
+    height: 100%;
+    font-size: 0.22rem;
+    line-height: 0.22rem;
+    white-space: nowrap;
+}
+#pet_sex .primary_sex_right{
+    min-width: 1.74rem;
+    height: 100%;
+    font-size: 0.22rem;
+    line-height: 0.22rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#pet_sex .primary_sex_right .pet_sex_MM,#pet_sex .primary_sex_right .pet_sex_GG{
+    width: 0.76rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#pet_sex .primary_sex_right .pet_sex_box{
+    height: 0.30rem;
+    width: 0.30rem;
+    background: #cccccc;
+    border-radius: 50%;
+    position: relative;
+}
+#pet_sex .primary_sex_right .pet_sex_box img{
+    display: block;
+    height: 0.20rem;
+    width: 0.20rem;
+    position: absolute;
+    top: 0.03rem;
+    left: 0.03rem;
+}
+
+
+/*宠物生日*/
+#pet_birth .primary_birth_left{
+    min-width: 1.22rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#pet_birth .primary_birth_left .birth_icon{
+    height: 100%;
+    width: 0.24rem;
+    overflow: hidden;
+    position: relative;
+}
+#pet_birth .primary_birth_left .birth_icon img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#pet_birth .primary_birth_left .birth_words{
+    width: 0.94rem;
+    height: 100%;
+    font-size: 0.22rem;
+    line-height: 0.22rem;
+    white-space: nowrap;
+}
+#pet_birth .primary_birth_right{
+    min-width: 1.74rem;
+    height: 100%;
+    font-size: 0.22rem;
+    line-height: 0.22rem;
+    color: #B2B2B2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#pet_birth .primary_birth_right img {
+    display: block;
+    height: 0.22rem;
+    width: 0.12rem;
+}
+/*宠物品种*/
+#pet_breed .primary_breed_left{
+    min-width: 1.22rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#pet_breed .primary_breed_left .breed_icon{
+    height: 100%;
+    width: 0.24rem;
+    overflow: hidden;
+    position: relative;
+}
+#pet_breed .primary_breed_left .breed_icon img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#pet_breed .primary_breed_left .breed_words{
+    width: 0.94rem;
+    height: 100%;
+    font-size: 0.22rem;
+    line-height: 0.22rem;
+    white-space: nowrap;
+}
+#pet_breed .primary_breed_right{
+    min-width: 1.74rem;
+    height: 100%;
+    font-size: 0.22rem;
+    line-height: 0.22rem;
+    color: #B2B2B2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#pet_breed .primary_breed_right img {
+    display: block;
+    height: 0.22rem;
+    width: 0.12rem;
+}
+/*宠物体重*/
+#pet_weight .primary_weight_left{
+    min-width: 1.22rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#pet_weight .primary_weight_left .weight_icon{
+    height: 100%;
+    width: 0.24rem;
+    overflow: hidden;
+    position: relative;
+}
+#pet_weight .primary_weight_left .weight_icon img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#pet_weight .primary_weight_left .weight_words{
+    width: 0.94rem;
+    height: 100%;
+    font-size: 0.22rem;
+    line-height: 0.22rem;
+    white-space: nowrap;
+}
+#pet_weight .primary_weight_right{
+    min-width: 1.44rem;
+    height: 100%;
+    font-size: 0.22rem;
+    line-height: 0.22rem;
+    color: #B2B2B2;
+}
+/*是否为可寄养宠物*/
+#pet_consign .primary_consign_left{
+    min-width: 2.24rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#pet_consign .primary_consign_left .consign_icon{
+    height: 100%;
+    width: 0.24rem;
+    overflow: hidden;
+    position: relative;
+}
+#pet_consign .primary_consign_left .consign_icon img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#pet_consign .primary_consign_left .consign_words{
+    min-width: 0.94rem;
+    height: 100%;
+    font-size: 0.22rem;
+    line-height: 0.22rem;
+    white-space: nowrap;
+}
+#pet_consign .primary_consign_right{
+    min-width: 1.30rem;
+    height: 100%;
+    font-size: 0.22rem;
+    line-height: 0.22rem;
+    color: #B2B2B2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.primary_consign_right .consign_left,.primary_consign_right .consign_right{
+    width: 0.54rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.primary_consign_right .consign_left .yes,.primary_consign_right .consign_right .no{
+    height: 0.16rem;
+    width: 0.16rem;
+    border: 0.03rem solid red;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: white;
+}
+/*保存*/
+footer.save{
+    height: 0.64rem;
+    width: 100%;
+    margin-top: 0.64rem;
+}
+footer.save .save_box{
+    height: 100%;
+    width: 4.28rem;
+    margin: 0 auto;
+    border-radius: 0.30rem;
+    text-align: center;
+    color: white;
+    font-size: 0.28rem;
+    line-height: 0.64rem;
+    font-weight: 500;
+    background: -webkit-linear-gradient(left,#FE4636,#FE2552);
+}
+::-webkit-input-placeholder
+{
+    text-align: right;
+}
+input::-webkit-input-placeholder {
+    font-size: 0.15rem;
+}

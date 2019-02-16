@@ -1,0 +1,18 @@
+/*
+* @Author: 75497
+* @Date:   2018-07-09 09:28:02
+* @Last Modified by:   75497
+* @Last Modified time: 2018-07-10 22:55:59
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body,html{
+	background-color: #f5f5f5;
+    font-size: large;
+}

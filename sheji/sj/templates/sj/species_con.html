@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>种类内容</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'sj/css/species_con.css' %}">
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <div class="con">
+                <div class="icon_sousuo">
+                  <a href="{% url 'sj:Pet_species'%}"><img src="{% static 'sj/img/jiantou.png' %}" width="11" height="20" alt=""></a>
+
+                </div>
+                <div class="word">
+                    <span>种类内容</span>
+                </div>
+                <div class="icon_fabu">
+                    <img src="{% static 'sj/img/right_icon.png' %}" width="20" height="17" alt="">
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="search">
+                <input type="text">
+            </section>
+            <section class="background">
+
+            </section>
+            <section class="con">
+                <div class="box">
+                    <div class="info">
+                      <a href="{% url 'sj:Type_details'%}"><img src="{% static 'sj/img/jinmao.png' %}" width="65" height="65" alt=""></a>
+
+                        <div class="word">
+                            <a href="Type_details.html"><span>西伯利亚金毛犬</span></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="{% static 'sj/img/chuanchuan.png' %}" width="65" height="65" alt="">
+                        <div class="word">
+                            <a href="Type_details.html"><span>串串狗</span></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="{% static 'sj/img/bianjing.png' %}" width="65" height="65" alt="">
+                        <div class="word">
+                            <a href="Type_details.html"><span>边境沙皮狗</span></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="{% static 'sj/img/deguo.png' %}" width="65" height="65" alt="">
+                        <div class="word">
+                            <a href="Type_details.html"><span>德国牧羊犬</span></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="{% static 'sj/img/bixiong.png' %}" width="65" height="65" alt="">
+                        <div class="word">
+                            <a href="Type_details.html"><span>比熊犬</span></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="{% static 'sj/img/sugelan.png' %}" width="65" height="65" alt="">
+                        <div class="word">
+                            <a href="Type_details.html"><span>苏格兰牧羊犬</span></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="{% static 'sj/img/boli.png' %}" width="65" height="65" alt="">
+                        <div class="word">
+                            <a href="Type_details.html"><span>波利犬</span></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="{% static 'sj/img/bianjingmuyang.png' %}" width="65" height="65" alt="">
+                        <div class="word">
+                            <a href="Type_details.html"><span>边境牧羊犬</span></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="{% static 'sj/img/chai.png' %}" width="65" height="65" alt="">
+                        <div class="word">
+                            <a href="Type_details.html"><span>柴犬</span></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="{% static 'sj/img/samoye.png' %}" width="65" height="65" alt="">
+                        <div class="word">
+                            <a href="Type_details.html"><span>萨姆耶</span></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="{% static 'sj/img/guibing.png' %}" width="65" height="65" alt="">
+                        <div class="word">
+                            <a href="Type_details.html"><span>贵宾犬</span></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="{% static 'sj/img/qiutian.png' %}" width="65" height="65" alt="">
+                        <div class="word">
+                            <a href="Type_details.html"><span>秋田犬</span></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="{% static 'sj/img/mini.png' %}" width="65" height="65" alt="">
+                        <div class="word">
+                            <a href="Type_details.html"><span>迷你狗</span></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="{% static 'sj/img/shapi.png' %}" width="65" height="65" alt="">
+                        <div class="word">
+                            <a href="Type_details.html"><span>沙皮狗</span></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="{% static 'sj/img/bige.png' %}" width="65" height="65" alt="">
+                        <div class="word">
+                            <a href="Type_details.html"><span>比格犬</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

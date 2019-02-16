@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>寄养</title>
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'sj/css/foster_care.css' %}">
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <div class="con">
+                <div class="icon_sousuo">
+                    <img src="{% static 'sj/img/sousuoicon.png' %}" width="17" height="19" alt="">
+                </div>
+                <div class="word">
+                    <span>寄养</span>
+                </div>
+                <div class="icon_fabu">
+                  <a href="{% url 'sj:fabu'%}"><img src="{% static 'sj/img/fabuicon.png' %}" width="20" height="22" alt=""></a>
+
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="jichong">
+                <img src="{% static 'sj/img/jichong.png' %}" width="180" height="70" alt="">
+            </div>
+            <div class="yangchong">
+                <img src="{% static 'sj/img/yangchong.png' %}" width="180" height="70" alt="">
+            </div>
+            <div class="word1">
+                <a href="{% url 'sj:send_pet'%}"><span>寄宠</span></a>
+            </div>
+            <div class="word2">
+                <span>百万攻略 轻松养宠</span>
+            </div>
+            <div class="word3">
+                <span>养宠</span>
+            </div>
+            <div class="word4">
+                <span>百万攻略 轻松养宠</span>
+            </div>
+        </nav>
+        <main>
+            <section class="section1">
+                <div class="con">
+                    <div class="loction">
+                        <div class="left">
+                            <div class="img_ji">
+                                <img src="{% static 'sj/img/jiyangzhuazi.png' %}" width="48" height="48" alt="">
+                            </div>
+                            <div class="location_name">
+                                <div class="top">
+                                    <span>布丁</span>
+                                    <span>山西</span>
+                                    <span>太原</span>
+                                    <div class="img_dingwei">
+                                        <img src="{% static 'sj/img/dingwei.png' %}" width="13" height="19" alt="">
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <span>波仔</span>
+                                    <span>二哈</span>
+                                    <div class="img_gutou">
+                                        <img src="{% static 'sj/img/gutou.png' %}" width="26" height="23" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="img_lianxi">
+                                <img src="{% static 'sj/img/lianxi.png' %}" width="73" height="25" alt="">
+                            </div>
+                            <div class="word">
+                                <span>联系</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                      <a href="{% url 'sj:dynamic_details'%}" style="color: black">亲爱的宠友们，最近两天公司有个很重要的项目需要去出差，有最近时间较自由的，方便接纳我们家波仔的吗？</a>
+
+                    </p>
+                    <div class="img_box">
+                        <img src="{% static 'sj/img/datu.png' %}" width="327" height="151" alt="">
+                    </div>
+                    <div class="pinglun">
+                        <div class="zang">
+                            <div class="left">
+                                <div class="img_zang1">
+                                    <img src="{% static 'sj/img/zang1img.png' %}" width="28" height="28" alt="">
+                                </div>
+                                <div class="img_zang1">
+                                    <img src="{% static 'sj/img/zang2img.png' %}" width="28" height="28" alt="">
+                                </div>
+                                <div class="img_zang1">
+                                    <img src="{% static 'sj/img/zang3img.png' %}" width="28" height="28" alt="">
+                                </div>
+                                <div class="zangnum">
+                                    <span style="color:#FE9186;">2468</span>
+                                    个赞
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="img_icon">
+                                    <img src="{% static 'sj/img/zangicon.png' %}" width="41" height="38" alt="">
+                                </div>
+                                <div class="img_icon">
+                                    <img src="{% static 'sj/img/pinglunicon.png' %}" width="41" height="38" alt="">
+                                </div>
+                                <div class="img_icon">
+                                    <img src="{% static 'sj/img/zhuanfaicon.png' %}" width="41" height="38" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="con1">
+                            <div class="pinglun_con">
+                                <span style="color:#FE4735;">包子：</span>
+                                我最近三天休假，如果时间对得上的话，我可以。
+                            </div>
+                            <div class="pinglun_con">
+                                <div>
+                                    <span style="color:#FE4735;">饺子：</span>
+                                </div>
+                                <div class="img_jiaozi">
+                                    <img src="{% static 'sj/img/jiaozi.png' %}" width="18" height="18" alt="">
+                                </div>
+                                <div class="img_jiaozi">
+                                    <img src="{% static 'sj/img/jiaozi.png' %}" width="18" height="18" alt="">
+                                </div>
+                                <div class="img_jiaozi">
+                                    <img src="{% static 'sj/img/jiaozi.png' %}" width="18" height="18" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="num">
+                            <div class="look_pinglun">
+                                <span>查看全部286条评论</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section2">
+
+            </section>
+            <section class="section3">
+                <div class="con">
+                    <div class="loction">
+                        <div class="left">
+                            <div class="img_ji">
+                                <img src="{% static 'sj/img/jiyangzhuazi2.png' %}" width="48" height="48" alt="">
+                            </div>
+                            <div class="location_name">
+                                <div class="top">
+                                    <span>糖果</span>
+                                    <span>山西</span>
+                                    <span>太原</span>
+                                    <div class="img_dingwei">
+                                        <img src="{% static 'sj/img/dingwei.png' %}" width="13" height="19" alt="">
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <span>奈奈</span>
+                                    <span>波斯</span>
+                                    <div class="img_gutou">
+                                        <img src="{% static 'sj/img/gutou.png' %}" width="26" height="23" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="img_lianxi">
+                                <img src="{% static 'sj/img/lianxi.png' %}" width="73" height="25" alt="">
+                            </div>
+                            <div class="word">
+                                <span>联系</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        咪友们，我最近老家有急事处理，需要回去三天左右，家有一只刚满三个月的猫咪需要你们的帮助，又可以帮我带几天的咪友请与我联系
+                        <img src="{% static 'sj/img/buhuo.png' %}" width="25" height="18" alt="">
+                    </p>
+                    <div class="img_box">
+                        <div class="img1">
+                            <img src="{% static 'sj/img/xiaomao1.png' %}" width="158" height="158" alt="">
+                        </div>
+                        <div class="img2">
+                            <img src="{% static 'sj/img/xiaomao2.png' %}" width="158" height="158" alt="">
+                        </div>
+                    </div>
+                    <div class="pinglun">
+                        <div class="zang">
+                            <div class="left">
+                                <div class="img_zang1">
+                                    <img src="{% static 'sj/img/zang1img.png' %}" width="28" height="28" alt="">
+                                </div>
+                                <div class="img_zang1">
+                                    <img src="{% static 'sj/img/zang2img.png' %}" width="28" height="28" alt="">
+                                </div>
+                                <div class="img_zang1">
+                                    <img src="{% static 'sj/img/zang3img.png' %}" width="28" height="28" alt="">
+                                </div>
+                                <div class="zangnum">
+                                    <span style="color:#FE9186;">4682</span>
+                                    个赞
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="img_icon">
+                                    <img src="{% static 'sj/img/zangicon.png' %}" width="41" height="38" alt="">
+                                </div>
+                                <div class="img_icon">
+                                    <img src="{% static 'sj/img/pinglunicon.png' %}" width="41" height="38" alt="">
+                                </div>
+                                <div class="img_icon">
+                                    <img src="{% static 'sj/img/zhuanfaicon.png' %}" width="41" height="38" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="con2">
+                            <div class="pinglun_con">
+                                <span style="color:#FE4735;">包子：</span>
+                                好可爱的猫咪啊~
+                            </div>
+                            <div class="pinglun_con">
+                                <div>
+                                    <span style="color:#FE4735;">饺子：</span>
+                                </div>
+                                <div class="img_jiaozi">
+                                    <img src="{% static 'sj/img/jiaozi.png' %}" width="18" height="18" alt="">
+                                </div>
+                                <div class="img_jiaozi">
+                                    <img src="{% static 'sj/img/jiaozi.png' %}" width="18" height="18" alt="">
+                                </div>
+                                <div class="img_jiaozi">
+                                    <img src="{% static 'sj/img/jiaozi.png' %}" width="18" height="18" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="num">
+                            <div class="look_pinglun">
+                                <span>查看全部385条评论</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="icon">
+                <img src="{% static 'sj/img/shouye.png' %}" width="30" height="24" alt="">
+            </div>
+            <div class="icon">
+                <img src="{% static 'sj/img/jiyang.png' %}" width="36" height="36" alt="">
+            </div>
+            <div class="icon">
+                <img src="{% static 'sj/img/my.png' %}" width="30" height="24" alt="">
+            </div>
+            <div class="word_shouye">
+              <a href="{% url 'sj:shouye'%}" style="color: #FE8D9F"><span>首页</span></a>
+
+            </div>
+            <div class="word_jiyang">
+              <a href="{% url 'sj:foster_care'%}" style="color: #FE8D9F"><span>寄养</span></a>
+
+            </div>
+            <div class="word_my">
+              <a href="{% url 'sj:mine'%}" style="color: #FE8D9F"><span>我的</span></a>
+
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    width: 100%;
+}
+/* 头部信息 */
+header.head{
+    height: 0.88rem;
+    width: 100%;
+    background: #FE4437;
+}
+header.head .main_box{
+    height: 100%;
+    width: 7.02rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header.head .main_box #settings,header.head .main_box #messages{
+    display: block;
+    height: 0.36rem;
+    width: 0.36rem;
+}
+#settings img,#messages img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+header.head .main_box #mine{
+    color: white;
+    font-size: 0.36rem;
+    font-weight: 600;
+}
+
+/*头像部分*/
+div.head_photo{
+    height: 2.08rem;
+    width: 100%;
+}
+div.head_photo .head_photo_main{
+    height: 100%;
+    width: 7.02rem;
+    padding: 0.24rem 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.head_photo .head_photo_main #head_photo_box{
+    height: 1.60rem;
+    width: 1.60rem;
+    border: 0.01rem solid white;
+    box-sizing: border-box;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+div.head_photo .head_photo_main #head_photo_box img{
+    display: block;
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    top: -30%;
+    left: -15%;
+}
+div.head_photo .head_photo_main .personal_info{
+    height: 1.12rem;
+    width: 4.93rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/*名字*/
+div.head_photo .head_photo_main .personal_info #personal_name{
+    height: 0.28rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.28rem;
+}
+#personal_name .mine_name{
+    font-weight: 600;
+}
+#personal_name .sex_icon{
+    height: 100%;
+    width: 0.16rem;
+    padding: 0 0.15rem;
+    position: relative;
+}
+#personal_name .sex_icon .sex_icon_circle{
+    height: 0.16rem;
+    width: 100%;
+    border: 0.02rem solid pink;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+#personal_name .sex_icon .sex_icon_heng{
+    height: 0.02rem;
+    width: 100%;
+    background: pink;
+    margin-top: 0.04rem;
+}
+#personal_name .sex_icon .sex_icon_shu{
+    height: 0.09rem;
+    width: 0.02rem;
+    position: absolute;
+    top: 0.16rem;
+    left: 0.22rem;
+    background: pink;
+}
+/*等级*/
+#personal_name .personal_grade{
+    width: 0.44rem;
+    height: 0.24rem;
+    border-radius: 0.10rem;
+    background: #AEDEEA;
+    color: white;
+    font-size: 0.12rem;
+    line-height: 0.24rem;
+    text-align: center;
+}
+
+/*联系方式*/
+div.head_photo .head_photo_main .personal_info #personal_tel{
+    height: 0.20rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#personal_tel img{
+    display: block;
+    height: 0.20rem;
+    width: 0.20rem;
+}
+#personal_tel .mine_tel{
+    display: block;
+    min-width: 1.16rem;
+    height: 100%;
+    padding-left: 0.08rem;
+    font-size: 0.12rem !important;
+    line-height: 0.20rem;
+}
+
+/*信誉*/
+div.head_photo .head_photo_main .personal_info #personal_credit{
+    height: 0.22rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#personal_credit img{
+    display: block;
+    height: 0.20rem;
+    width: 0.20rem;
+}
+#personal_credit .personal_credit_value{
+    height: 100%;
+    min-width: 3.40rem;
+    padding-left: 0.08rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.12rem;
+}
+#personal_credit .personal_credit_value .personal_credit_tiao{
+    width: 2.06rem;
+    height: 0.06rem;
+    background: #FB98AC;
+    border-radius: 0.03rem;
+    margin: 0 0.04rem;
+    position: relative;
+}
+#personal_credit .personal_credit_value .personal_credit_tiao .personal_credit_values{
+    width: 83.9%;
+    height: 100%;
+    border-radius: 0.03rem;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+/*签到*/
+div.head_photo .head_photo_main .personal_info #sign_in{
+    height: 0.50rem;
+    width: 1.00rem;
+    position: absolute;
+    right: 0.24rem;
+    top: 0.18rem;
+    padding: 0 0.14rem;
+    border-radius: 0.20rem;
+    box-sizing: border-box;
+    background: -webkit-linear-gradient(left,#F84F3F,#F83159);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.head_photo .head_photo_main .personal_info #sign_in img{
+    display: block;
+    width: 0.20rem;
+    height: 0.20rem;
+}
+div.head_photo .head_photo_main .personal_info #sign_in span{
+    color: white;
+    font-size: 0.20rem;
+}
+
+/*我的发布和我的宠友*/
+main.issue_and_petfriends{
+    height: 2.06rem;
+    width: 100%;
+    margin-top: 0.40rem;
+}
+main.issue_and_petfriends .issue_and_petfriends_box{
+    height: 100%;
+    width: 7.02rem;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*我的发布*/
+main #issue{
+    height: 100%;
+    width: 3.36rem;
+    border-radius: 0.12rem;
+    box-shadow: 0.02rem 0.02rem 0.02rem pink,-0.02rem -0.02rem 0.02rem pink;
+}
+main #issue .issue_img{
+    height: 1.00rem;
+    width: 1.00rem;
+    margin: 0 auto;
+    margin-top: 0.32rem;
+    background: #FE4437;
+    border-radius: 50%;
+    position: relative;
+}
+main #issue .issue_img img{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+main #issue .issue_message{
+    height: 0.56rem;
+    width: 100%;
+    font-size: 0.24rem;
+    line-height: 0.56rem;
+    text-align: center;
+}
+
+/*我的宠友*/
+main #pet_friend{
+    height: 100%;
+    width: 3.36rem;
+    border-radius: 0.12rem;
+    box-shadow: 0.02rem 0.02rem 0.02rem pink,-0.02rem -0.02rem 0.02rem pink;
+}
+main #pet_friend .pet_friend_img{
+    height: 1.00rem;
+    width: 1.00rem;
+    margin: 0 auto;
+    margin-top: 0.32rem;
+    background: #FE4437;
+    border-radius: 50%;
+    position: relative;
+}
+main #pet_friend .pet_friend_img img{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+main #pet_friend .pet_friend_message{
+    height: 0.56rem;
+    width: 100%;
+    font-size: 0.24rem;
+    line-height: 0.56rem;
+    text-align: center;
+}
+/*我的宠物*/
+main.my_pet{
+    height: auto;
+    width: 100%;
+    margin-top: 0.40rem;
+}
+main.my_pet .my_pet_box{
+    height: 100%;
+    width: 7.02rem;
+    margin: 0 auto;
+}
+main.my_pet .my_pet_box .my_pet_title{
+    height: 0.78rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+main.my_pet .my_pet_box .children{
+    height: 1.80rem;
+    width: 100%;
+    margin-top: 0.32rem;
+    background: #FFE9EA;
+    border-radius: 0.15rem;
+}
+main.my_pet .my_pet_box .children .children_detail{
+    width: 6.54rem;
+    height: 1.00rem;
+    padding: 0.40rem 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*宠物信息*/
+#children_datail_left{
+    height: 1.00rem;
+    width: 1.00rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#children_detail_right{
+    height: 100%;
+    width: 5.30rem;
+    display: flex;
+    padding: 0.10rem 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#children_detail_top{
+    height: 0.24rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#children_detail_top #children_detail_top_left{
+    min-width: 2.74rem;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+#children_detail_top #children_detail_top_right{
+    width: 0.86rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#children_detail_bottom{
+    height: 0.28rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#children_detail_bottom #children_detail_bottom_left{
+    height: 100%;
+    width: 1.96rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#children_detail_bottom #children_detail_bottom_left #children_age{
+    height: 100%;
+    width: 0.70rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#children_detail_bottom #children_detail_bottom_left #children_weight{
+    height: 100%;
+    width: 0.86rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#children_detail_bottom #children_detail_bottom_right{
+    width: 0.86rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*添加宠物*/
+div.add{
+    height: 1.00rem;
+    width: 100%;
+    margin-top: 0.24rem;
+    margin-bottom: 2.34rem;
+}
+div.add .add_box{
+    height: 100%;
+    width: 7.02rem;
+    margin: 0 auto;
+    background: #FFE9EA;
+    border-radius: 0.15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*脚部/底部*/
+footer.foot{
+    width: 100%;
+    height: 1.30rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+footer.foot .foot_box{
+    height: 1.00rem;
+    width: 100%;
+    padding: 0 0.70rem;
+    box-sizing: border-box;
+    background: #FEEFF2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;justify-content: space-between;align-items: center;
+}
+footer.foot .foot_box .foot2{
+    height: 100%;
+    width: 0.66rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

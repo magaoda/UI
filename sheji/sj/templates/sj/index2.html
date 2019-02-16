@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+	<script src="js/jquery-3.2.1.js"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'sj/css/base.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'sj/css/index2.css' %}">
+</head>
+<body>
+    <bottom>
+        <div class="top">
+            <img src="{% static 'sj/img/封面.png' %}" alt="">
+        </div>
+        <div class="main">
+            <img src="{% static 'sj/img/语音线.png' %}" alt="">
+            <span>上划取消</span>
+        </div>
+        <div class="bottom">
+            <a href="{% url 'sj:index0' %}"><img src="{% static 'sj/img/语音1.png' %}" alt=""></a>
+        </div>
+    </bottom>
+</body>
+</html>

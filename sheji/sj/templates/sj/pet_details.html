@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宠物详情</title>
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'sj/css/pet_details.css' %}">
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <div class="con">
+                <div class="icon_sousuo">
+                  <a href="{% url 'sj:personal_dynamics'%}"><img src="{% static 'sj/img/jiantou.png' %}" width="10" height="20" alt=""></a>
+
+                </div>
+                <div class="word">
+                    <span>宠物详情</span>
+                </div>
+                <div class="icon_fabu">
+                    <img src="{% static 'sj/img/icon.png' %}" width="20" height="18" alt="">
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="img_box">
+                <img src="{% static 'sj/img/head.png' %}" width="91" height="91" alt="">
+            </div>
+            <div class="word">
+                <span>胖妞</span>
+            </div>
+        </nav>
+        <main>
+            <section class="section1">
+                <div class="days">
+                    <div class="img_con">
+                        <img src="{% static 'sj/img/day.png' %}" width="23" height="21" alt="">
+                    </div>
+                    <div class="word">
+                        <span style="color:#FE2552;">238</span>
+                        <span style="color:#666666;">天陪伴</span>
+                    </div>
+                </div>
+                <div class="zang">
+                    <div class="img_con">
+                        <img src="{% static 'sj/img/zang.png' %}" width="20" height="19" alt="">
+                    </div>
+                    <div class="word">
+                        <span style="color:#FE2552;">3579</span>
+                        <span style="color:#666666;">个赞</span>
+                    </div>
+                </div>
+            </section>
+            <section class="section2">
+                <div class="button1">
+                  <a href="" style="color: #fff">主页</a>
+                </div>
+                <div class="button2">
+                    相册
+                </div>
+            </section>
+            <section class="section3">
+                <div class="time_row">
+                    <div class="time1">
+                        <div class="word">
+                            <span>今天</span>
+                        </div>
+                        <div class="tuxing1">
+
+                        </div>
+                        <div class="tuxing2">
+
+                        </div>
+                    </div>
+                    <div class="time2">
+                        <div class="word">
+                            <span style="color:#FE4735;">20日</span>
+                            <span>5月</span>
+                        </div>
+                        <div class="tuxing1">
+
+                        </div>
+                        <div class="tuxing2">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="con">
+                    <div class="con1">
+                        <div class="add">
+                            +
+                        </div>
+                        <div class="box">
+                            <img src="{% static 'sj/img/game.png' %}" width="32" height="25" alt="">
+                            <span>和主人一起玩游戏，好开心！</span>
+                        </div>
+                    </div>
+                    <div class="con2">
+                        <div class="picture">
+                            <img src="{% static 'sj/img/gou1.png' %}" width="96" height="96" alt="">
+                            <img src="{% static 'sj/img/gou2.png' %}" width="96" height="96" alt="">
+                        </div>
+                        <div class="box">
+                            <img src="{% static 'sj/img/game.png' %}" width="32" height="25" alt="">
+                            <span>今天是我在萌宠之家的第一天，好开心！</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

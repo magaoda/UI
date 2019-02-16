@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'sj/css/fabu.css' %}">
+    <script src="{% static 'sj/js/rem.js' %}"></script>
+    <script src="{% static 'sj/js/jquery-3.2.1.js' %}"></script>
+
+</head>
+<body>
+    <header>
+        <div class="top">
+          <a href="{% url 'sj:foster_care' %}"><img src="{% static 'sj/img/返回1.png' %}" id="fanhui"></a>
+
+            <span>发布</span>
+            <a href=""><img src="{% static 'sj/img/发布.png' %}" id="fabu"></a>
+        </div>
+    </header>
+    <main>
+        <div class="top">
+            <textarea name="" id="t1"></textarea>
+            <script>
+            let t1=document.getElementById("t1")
+                t1.value="说点什么吧~"
+                t1.onclick=function () {
+                    t1.value=""
+                }
+            </script>
+        </div>
+        <div class="middle">
+            <img src="{% static 'sj/img/添加照片.png' %}" id="aa">
+            <img src="{% static 'sj/img/公开.png' %}" id="bb">
+            <input type="file" accept="image/*" autofocus style="display: none" id="imgs">
+        </div>
+        <script>
+            $('#aa').click(function () {
+                $('#imgs').click()
+            })
+        </script>
+        <div class="bottom">
+          <a href="{% url 'sj:position'%}">
+            <img src="{% static 'sj/img/定位.png' %}" id="cc">
+            <span>所在位置</span></a>
+            <div class="ji">
+                <img src="{% static 'sj/}img/选择寄.png' %" id="a">
+                <img src="{% static 'sj/img/寄.png' %}" id="dd">
+            </div>
+            <script>
+                $(function () {
+                    var flag=true
+                    $("#a").click(function () {
+                        if(flag){
+                        $('#a').css({opacity:1})
+                        flag=false
+                    }else{
+                        $('#a').css({opacity:0})
+                        flag=true
+                    }
+                    })
+                })
+            </script>
+            <div class="yang">
+                <img src="{% static 'sj/img/选择寄.png' %}" id="b">
+                <img src="{% static 'sj/img/养.png' %}" id="ee">
+            </div>
+            <script>
+                $(function () {
+                    var flag=true
+                    $("#b").click(function () {
+                        if(flag){
+                        $('#b').css({opacity:1})
+                        flag=false
+                    }else{
+                        $('#b').css({opacity:0})
+                        flag=true
+                    }
+                    })
+                })
+            </script>
+        </div>
+    </main>
+    <bottom>
+        <img src="{% static 'sj/img/空间.png' %}" id="ff">
+        <img src="{% static 'sj/img/朋友圈.png' %}" id="gg">
+        <img src="{% static 'sj/img/微博.png' %}" id="hh">
+    </bottom>
+</body>
+</html>
